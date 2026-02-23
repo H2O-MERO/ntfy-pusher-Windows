@@ -36,22 +36,31 @@ namespace ntfysh_client
 
         private void OnToastActivated(ToastNotificationActivatedEventArgsCompat e)
         {
-            var args = ToastArguments.Parse(e.Argument);
-            if (args.TryGetValue("action", out string action) && action == "copy")
+            this.Invoke((MethodInvoker)delegate
             {
-                if (args.TryGetValue("tag", out string tag) && _toastMessages.TryGetValue(tag, out string message))
+                var args = ToastArguments.Parse(e.Argument);
+                if (args.TryGetValue("action", out string action) && action == "copy")
                 {
-                    try
+                    if (args.TryGetValue("tag", out string tag) && _toastMessages.TryGetValue(tag, out string message))
                     {
-                        Clipboard.SetText(message);
-                    }
-                    finally
-                    {
-                        _toastMessages.Remove(tag); // 移除已复制的消息
+                        try
+                        {
+                            Clipboard.SetText(message);
+                            //Debug.WriteLine($"复制到剪贴板: {message}");
+                        }
+                        catch (Exception ex)
+                        {
+                           // Debug.WriteLine($"复制失败: {ex.Message}");
+                        }
+                        finally
+                        {
+                            _toastMessages.Remove(tag);
+                        }
                     }
                 }
-            }
+            });
         }
+
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
