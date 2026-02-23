@@ -118,16 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="richTextBox2.Text" xml:space="preserve">
-    <value>ntfy.sh Windows by Lucas Bortoli and Contributors
+    <value>本软件是 ntfy.sh Windows 的一个中文分支版本。原版由 Lucas Bortoli 及贡献者开发。
+ntfy.sh Windows 是一款轻量级的推送通知客户端，用于接收通过兼容 https://ntfy.sh 标准的服务器发送的通知。
+核心功能 (原版功能)
+•	轻量级： 占用资源少。
+•	多服务器支持： 可同时接收来自多个不同 ntfy.sh 兼容服务器（包括但不限于官方 ntfy.sh）的通知。
+•	双协议支持： 通过 Websocket 或 HTTP 两种协议实时接收通知。
+•	话题支持： 支持订阅公开（无认证）和私有（认证）话题。
+•	桌面通知： 在 Windows 系统托盘中运行，收到消息时弹出桌面通知。
+新增与增强内容 (由本分支版提供)
+•	完整中文界面： 软件界面、设置选项已全面中文化，方便中文用户使用。
+•	更现代的通知系统： 使用toast替代简单的通知系统，以支持复制按钮一类的现代弹窗功能
+获取与更新
+您可以从本项目的 GitHub 页面获取最新发布版本并跟踪后续更新：
+https://github.com/H2O-MERO/ntfy-pusher-Windows
+请注意：
+•	原版项目地址：https://github.com/lucas-bortoli/ntfysh-windows
+•	本中文版及新增功能由 H2O_MERO维护。
 
-ntfy.sh Windows is a small lightweight push notification client for notifications sent via https://ntfy.sh compatible servers.
-
-It is capable of receiving notifications from multiple ntfy.sh servers simultaneously via Websocket or HTTP and supports both unauthenticated and authenticated topics.
-
-Get the latest release and keep track of updates via GitHub at https://github.com/lucas-bortoli/ntfysh-windows</value>
+</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
     <value>Copyright © 2022 Lucas Bortoli
+Copyright © 2025 H2O_MERO
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

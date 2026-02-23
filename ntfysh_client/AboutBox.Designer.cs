@@ -49,7 +49,7 @@ namespace ntfysh_client
             button1.Name = "button1";
             button1.Size = new System.Drawing.Size(138, 43);
             button1.TabIndex = 0;
-            button1.Text = "Close";
+            button1.Text = "关闭";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -122,6 +122,7 @@ namespace ntfysh_client
             richTextBox1.Size = new System.Drawing.Size(908, 246);
             richTextBox1.TabIndex = 0;
             richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            richTextBox1.TextChanged += richTextBox1_TextChanged;
             // 
             // AboutBox
             // 

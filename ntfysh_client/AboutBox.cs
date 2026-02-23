@@ -19,5 +19,10 @@ namespace ntfysh_client
         {
 
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
