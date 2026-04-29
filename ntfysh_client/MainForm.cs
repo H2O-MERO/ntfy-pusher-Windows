@@ -147,18 +147,22 @@ namespace ntfysh_client
                 //use toast for pushing cotifications
 
                 string tag = Guid.NewGuid().ToString();
-                _toastMessages[tag] = e.Message; // saved for copy
+                _toastMessages[tag] = e.Message;
 
                 if (Program.Settings.NativeNotificationsAutoCopyToClipboard)
                 {
                     CopyToClipboard(e.Message);
                 }
 
+                string buttonText = Program.Settings.NativeNotificationsAutoCopyToClipboard
+                    ? "已自动复制到剪切板"
+                    : "复制内容";
+
                 new ToastContentBuilder()
                     .AddText(finalTitle)
                     .AddText(e.Message)
                     .AddButton(new ToastButton()
-                        .SetContent("复制内容")
+                        .SetContent(buttonText)              // ← 动态文本
                         .AddArgument("action", "copy")
                         .AddArgument("tag", tag)
                         .SetBackgroundActivation())
