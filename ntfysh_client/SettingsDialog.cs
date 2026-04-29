@@ -33,7 +33,7 @@ namespace ntfysh_client
             set
             {
                 useNativeWindowsNotifications.Checked = value;
-                groupNativeNotification.Enabled = value;   
+                groupNativeNotification.Enabled = value;
                 NotificationsMethod = value ? NotificationsType.NativeWindows : NotificationsType.CustomTray;
             }
         }
@@ -47,6 +47,12 @@ namespace ntfysh_client
                 groupCustomNotificationSettings.Enabled = value;
                 NotificationsMethod = (value) ? NotificationsType.NativeWindows : NotificationsType.CustomTray;
             }
+        }
+
+        public bool AutoStartEnabled
+        {
+            get => checkBoxAutoStart.Checked;
+            set => checkBoxAutoStart.Checked = value;
         }
         #endregion
 
@@ -129,6 +135,11 @@ namespace ntfysh_client
         }
 
         private void timeoutLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

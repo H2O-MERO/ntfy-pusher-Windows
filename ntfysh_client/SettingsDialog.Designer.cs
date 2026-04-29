@@ -50,6 +50,7 @@ namespace ntfysh_client
             label1 = new System.Windows.Forms.Label();
             groupNativeNotification = new System.Windows.Forms.GroupBox();
             nativeNotificationAutoCopy = new System.Windows.Forms.CheckBox();
+            checkBoxAutoStart = new System.Windows.Forms.CheckBox();
             buttonPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)timeout).BeginInit();
             ((System.ComponentModel.ISupportInitialize)reconnectAttempts).BeginInit();
@@ -65,18 +66,18 @@ namespace ntfysh_client
             buttonPanel.Controls.Add(cancelButton);
             buttonPanel.Controls.Add(saveButton);
             buttonPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            buttonPanel.Location = new System.Drawing.Point(0, 632);
-            buttonPanel.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            buttonPanel.Location = new System.Drawing.Point(0, 467);
+            buttonPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             buttonPanel.Name = "buttonPanel";
-            buttonPanel.Size = new System.Drawing.Size(834, 82);
+            buttonPanel.Size = new System.Drawing.Size(531, 58);
             buttonPanel.TabIndex = 0;
             // 
             // cancelButton
             // 
-            cancelButton.Location = new System.Drawing.Point(570, 26);
-            cancelButton.Margin = new System.Windows.Forms.Padding(5);
+            cancelButton.Location = new System.Drawing.Point(363, 18);
+            cancelButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             cancelButton.Name = "cancelButton";
-            cancelButton.Size = new System.Drawing.Size(118, 37);
+            cancelButton.Size = new System.Drawing.Size(75, 26);
             cancelButton.TabIndex = 2;
             cancelButton.Text = "取消";
             cancelButton.UseVisualStyleBackColor = true;
@@ -84,10 +85,10 @@ namespace ntfysh_client
             // 
             // saveButton
             // 
-            saveButton.Location = new System.Drawing.Point(698, 26);
-            saveButton.Margin = new System.Windows.Forms.Padding(5);
+            saveButton.Location = new System.Drawing.Point(444, 18);
+            saveButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             saveButton.Name = "saveButton";
-            saveButton.Size = new System.Drawing.Size(118, 37);
+            saveButton.Size = new System.Drawing.Size(75, 26);
             saveButton.TabIndex = 1;
             saveButton.Text = "保存";
             saveButton.UseVisualStyleBackColor = true;
@@ -96,58 +97,58 @@ namespace ntfysh_client
             // timeoutLabel
             // 
             timeoutLabel.AutoSize = true;
-            timeoutLabel.Location = new System.Drawing.Point(20, 14);
-            timeoutLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            timeoutLabel.Location = new System.Drawing.Point(13, 10);
+            timeoutLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             timeoutLabel.Name = "timeoutLabel";
-            timeoutLabel.Size = new System.Drawing.Size(443, 24);
+            timeoutLabel.Size = new System.Drawing.Size(296, 17);
             timeoutLabel.TabIndex = 3;
             timeoutLabel.Text = "通知提示超时（秒，使用-1表示需要手动关闭通知）：";
             timeoutLabel.Click += timeoutLabel_Click;
             // 
             // timeout
             // 
-            timeout.Location = new System.Drawing.Point(20, 45);
-            timeout.Margin = new System.Windows.Forms.Padding(5);
+            timeout.Location = new System.Drawing.Point(13, 32);
+            timeout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             timeout.Maximum = new decimal(new int[] { -1981284353, -1966660860, 0, 0 });
             timeout.Name = "timeout";
-            timeout.Size = new System.Drawing.Size(795, 30);
+            timeout.Size = new System.Drawing.Size(506, 23);
             timeout.TabIndex = 4;
             // 
             // reconnectAttempts
             // 
-            reconnectAttempts.Location = new System.Drawing.Point(19, 117);
-            reconnectAttempts.Margin = new System.Windows.Forms.Padding(5);
+            reconnectAttempts.Location = new System.Drawing.Point(12, 83);
+            reconnectAttempts.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             reconnectAttempts.Maximum = new decimal(new int[] { -1981284353, -1966660860, 0, 0 });
             reconnectAttempts.Name = "reconnectAttempts";
-            reconnectAttempts.Size = new System.Drawing.Size(795, 30);
+            reconnectAttempts.Size = new System.Drawing.Size(506, 23);
             reconnectAttempts.TabIndex = 6;
             // 
             // reconnectAttemptsLabel
             // 
             reconnectAttemptsLabel.AutoSize = true;
-            reconnectAttemptsLabel.Location = new System.Drawing.Point(19, 86);
-            reconnectAttemptsLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            reconnectAttemptsLabel.Location = new System.Drawing.Point(12, 61);
+            reconnectAttemptsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             reconnectAttemptsLabel.Name = "reconnectAttemptsLabel";
-            reconnectAttemptsLabel.Size = new System.Drawing.Size(388, 24);
+            reconnectAttemptsLabel.Size = new System.Drawing.Size(260, 17);
             reconnectAttemptsLabel.TabIndex = 5;
             reconnectAttemptsLabel.Text = "最大重新连接重试尝试次数（需要重新启动）：";
             // 
             // reconnectAttemptDelay
             // 
-            reconnectAttemptDelay.Location = new System.Drawing.Point(19, 189);
-            reconnectAttemptDelay.Margin = new System.Windows.Forms.Padding(5);
+            reconnectAttemptDelay.Location = new System.Drawing.Point(12, 134);
+            reconnectAttemptDelay.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             reconnectAttemptDelay.Maximum = new decimal(new int[] { -1981284353, -1966660860, 0, 0 });
             reconnectAttemptDelay.Name = "reconnectAttemptDelay";
-            reconnectAttemptDelay.Size = new System.Drawing.Size(795, 30);
+            reconnectAttemptDelay.Size = new System.Drawing.Size(506, 23);
             reconnectAttemptDelay.TabIndex = 8;
             // 
             // reconnectAttemptDelayLabel
             // 
             reconnectAttemptDelayLabel.AutoSize = true;
-            reconnectAttemptDelayLabel.Location = new System.Drawing.Point(19, 158);
-            reconnectAttemptDelayLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            reconnectAttemptDelayLabel.Location = new System.Drawing.Point(12, 112);
+            reconnectAttemptDelayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             reconnectAttemptDelayLabel.Name = "reconnectAttemptDelayLabel";
-            reconnectAttemptDelayLabel.Size = new System.Drawing.Size(334, 24);
+            reconnectAttemptDelayLabel.Size = new System.Drawing.Size(224, 17);
             reconnectAttemptDelayLabel.TabIndex = 7;
             reconnectAttemptDelayLabel.Text = "尝试之间的延迟（秒，需要重新启动）：";
             // 
@@ -155,21 +156,21 @@ namespace ntfysh_client
             // 
             nativeVersusCustomNotificationsGroupBox.Controls.Add(useCustomTrayNotifications);
             nativeVersusCustomNotificationsGroupBox.Controls.Add(useNativeWindowsNotifications);
-            nativeVersusCustomNotificationsGroupBox.Location = new System.Drawing.Point(19, 235);
-            nativeVersusCustomNotificationsGroupBox.Margin = new System.Windows.Forms.Padding(5);
+            nativeVersusCustomNotificationsGroupBox.Location = new System.Drawing.Point(12, 166);
+            nativeVersusCustomNotificationsGroupBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             nativeVersusCustomNotificationsGroupBox.Name = "nativeVersusCustomNotificationsGroupBox";
-            nativeVersusCustomNotificationsGroupBox.Padding = new System.Windows.Forms.Padding(5);
-            nativeVersusCustomNotificationsGroupBox.Size = new System.Drawing.Size(795, 107);
+            nativeVersusCustomNotificationsGroupBox.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            nativeVersusCustomNotificationsGroupBox.Size = new System.Drawing.Size(506, 76);
             nativeVersusCustomNotificationsGroupBox.TabIndex = 9;
             nativeVersusCustomNotificationsGroupBox.TabStop = false;
             // 
             // useCustomTrayNotifications
             // 
             useCustomTrayNotifications.AutoSize = true;
-            useCustomTrayNotifications.Location = new System.Drawing.Point(9, 64);
-            useCustomTrayNotifications.Margin = new System.Windows.Forms.Padding(5);
+            useCustomTrayNotifications.Location = new System.Drawing.Point(6, 45);
+            useCustomTrayNotifications.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             useCustomTrayNotifications.Name = "useCustomTrayNotifications";
-            useCustomTrayNotifications.Size = new System.Drawing.Size(423, 28);
+            useCustomTrayNotifications.Size = new System.Drawing.Size(283, 21);
             useCustomTrayNotifications.TabIndex = 1;
             useCustomTrayNotifications.TabStop = true;
             useCustomTrayNotifications.Text = "使用ntfysh-windows自定义托盘通知（不推荐）";
@@ -179,10 +180,10 @@ namespace ntfysh_client
             // useNativeWindowsNotifications
             // 
             useNativeWindowsNotifications.AutoSize = true;
-            useNativeWindowsNotifications.Location = new System.Drawing.Point(9, 24);
-            useNativeWindowsNotifications.Margin = new System.Windows.Forms.Padding(5);
+            useNativeWindowsNotifications.Location = new System.Drawing.Point(6, 17);
+            useNativeWindowsNotifications.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             useNativeWindowsNotifications.Name = "useNativeWindowsNotifications";
-            useNativeWindowsNotifications.Size = new System.Drawing.Size(294, 28);
+            useNativeWindowsNotifications.Size = new System.Drawing.Size(199, 21);
             useNativeWindowsNotifications.TabIndex = 0;
             useNativeWindowsNotifications.TabStop = true;
             useNativeWindowsNotifications.Text = "使用Windows原生通知（推荐）";
@@ -193,21 +194,21 @@ namespace ntfysh_client
             groupCustomNotificationSettings.Controls.Add(customNotificationsPlayWindowsNotificationAudio);
             groupCustomNotificationSettings.Controls.Add(customNotificationsShowInDarkMode);
             groupCustomNotificationSettings.Controls.Add(customNotificationsShowTimeoutBar);
-            groupCustomNotificationSettings.Location = new System.Drawing.Point(19, 389);
-            groupCustomNotificationSettings.Margin = new System.Windows.Forms.Padding(5);
+            groupCustomNotificationSettings.Location = new System.Drawing.Point(12, 276);
+            groupCustomNotificationSettings.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             groupCustomNotificationSettings.Name = "groupCustomNotificationSettings";
-            groupCustomNotificationSettings.Padding = new System.Windows.Forms.Padding(5);
-            groupCustomNotificationSettings.Size = new System.Drawing.Size(792, 139);
+            groupCustomNotificationSettings.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            groupCustomNotificationSettings.Size = new System.Drawing.Size(504, 98);
             groupCustomNotificationSettings.TabIndex = 10;
             groupCustomNotificationSettings.TabStop = false;
             // 
             // customNotificationsPlayWindowsNotificationAudio
             // 
             customNotificationsPlayWindowsNotificationAudio.AutoSize = true;
-            customNotificationsPlayWindowsNotificationAudio.Location = new System.Drawing.Point(9, 97);
-            customNotificationsPlayWindowsNotificationAudio.Margin = new System.Windows.Forms.Padding(5);
+            customNotificationsPlayWindowsNotificationAudio.Location = new System.Drawing.Point(6, 69);
+            customNotificationsPlayWindowsNotificationAudio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             customNotificationsPlayWindowsNotificationAudio.Name = "customNotificationsPlayWindowsNotificationAudio";
-            customNotificationsPlayWindowsNotificationAudio.Size = new System.Drawing.Size(223, 28);
+            customNotificationsPlayWindowsNotificationAudio.Size = new System.Drawing.Size(152, 21);
             customNotificationsPlayWindowsNotificationAudio.TabIndex = 2;
             customNotificationsPlayWindowsNotificationAudio.Text = "播放Windows通知声音";
             customNotificationsPlayWindowsNotificationAudio.UseVisualStyleBackColor = true;
@@ -216,10 +217,10 @@ namespace ntfysh_client
             // customNotificationsShowInDarkMode
             // 
             customNotificationsShowInDarkMode.AutoSize = true;
-            customNotificationsShowInDarkMode.Location = new System.Drawing.Point(9, 59);
-            customNotificationsShowInDarkMode.Margin = new System.Windows.Forms.Padding(5);
+            customNotificationsShowInDarkMode.Location = new System.Drawing.Point(6, 42);
+            customNotificationsShowInDarkMode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             customNotificationsShowInDarkMode.Name = "customNotificationsShowInDarkMode";
-            customNotificationsShowInDarkMode.Size = new System.Drawing.Size(216, 28);
+            customNotificationsShowInDarkMode.Size = new System.Drawing.Size(147, 21);
             customNotificationsShowInDarkMode.TabIndex = 1;
             customNotificationsShowInDarkMode.Text = "在深色模式下显示通知";
             customNotificationsShowInDarkMode.UseVisualStyleBackColor = true;
@@ -227,10 +228,10 @@ namespace ntfysh_client
             // customNotificationsShowTimeoutBar
             // 
             customNotificationsShowTimeoutBar.AutoSize = true;
-            customNotificationsShowTimeoutBar.Location = new System.Drawing.Point(9, 22);
-            customNotificationsShowTimeoutBar.Margin = new System.Windows.Forms.Padding(5);
+            customNotificationsShowTimeoutBar.Location = new System.Drawing.Point(6, 16);
+            customNotificationsShowTimeoutBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             customNotificationsShowTimeoutBar.Name = "customNotificationsShowTimeoutBar";
-            customNotificationsShowTimeoutBar.Size = new System.Drawing.Size(234, 28);
+            customNotificationsShowTimeoutBar.Size = new System.Drawing.Size(159, 21);
             customNotificationsShowTimeoutBar.TabIndex = 0;
             customNotificationsShowTimeoutBar.Text = "在通知中显示超时进度条";
             customNotificationsShowTimeoutBar.UseVisualStyleBackColor = true;
@@ -238,19 +239,20 @@ namespace ntfysh_client
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(19, 363);
-            label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            label1.Location = new System.Drawing.Point(12, 257);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(172, 24);
+            label1.Size = new System.Drawing.Size(116, 17);
             label1.TabIndex = 11;
             label1.Text = "自定义托盘通知设置";
             // 
             // groupNativeNotification
             // 
             groupNativeNotification.Controls.Add(nativeNotificationAutoCopy);
-            groupNativeNotification.Location = new System.Drawing.Point(19, 536);
+            groupNativeNotification.Location = new System.Drawing.Point(12, 380);
+            groupNativeNotification.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             groupNativeNotification.Name = "groupNativeNotification";
-            groupNativeNotification.Size = new System.Drawing.Size(792, 72);
+            groupNativeNotification.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            groupNativeNotification.Size = new System.Drawing.Size(504, 51);
             groupNativeNotification.TabIndex = 3;
             groupNativeNotification.TabStop = false;
             groupNativeNotification.Text = "Windows原生通知设置";
@@ -259,19 +261,32 @@ namespace ntfysh_client
             // nativeNotificationAutoCopy
             // 
             nativeNotificationAutoCopy.AutoSize = true;
-            nativeNotificationAutoCopy.Location = new System.Drawing.Point(9, 29);
+            nativeNotificationAutoCopy.Location = new System.Drawing.Point(6, 21);
+            nativeNotificationAutoCopy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             nativeNotificationAutoCopy.Name = "nativeNotificationAutoCopy";
-            nativeNotificationAutoCopy.Size = new System.Drawing.Size(270, 28);
+            nativeNotificationAutoCopy.Size = new System.Drawing.Size(123, 21);
             nativeNotificationAutoCopy.TabIndex = 0;
             nativeNotificationAutoCopy.Text = "自动复制通知内容";
             nativeNotificationAutoCopy.UseVisualStyleBackColor = true;
             // 
+            // checkBoxAutoStart
+            // 
+            checkBoxAutoStart.AutoSize = true;
+            checkBoxAutoStart.Location = new System.Drawing.Point(18, 436);
+            checkBoxAutoStart.Name = "checkBoxAutoStart";
+            checkBoxAutoStart.Size = new System.Drawing.Size(99, 21);
+            checkBoxAutoStart.TabIndex = 12;
+            checkBoxAutoStart.Text = "开机自动启动";
+            checkBoxAutoStart.UseVisualStyleBackColor = true;
+            checkBoxAutoStart.CheckedChanged += checkBox1_CheckedChanged;
+            // 
             // SettingsDialog
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
-            ClientSize = new System.Drawing.Size(834, 714);
+            ClientSize = new System.Drawing.Size(531, 525);
+            Controls.Add(checkBoxAutoStart);
             Controls.Add(groupNativeNotification);
             Controls.Add(label1);
             Controls.Add(groupCustomNotificationSettings);
@@ -284,7 +299,7 @@ namespace ntfysh_client
             Controls.Add(timeoutLabel);
             Controls.Add(buttonPanel);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SettingsDialog";
@@ -331,5 +346,6 @@ namespace ntfysh_client
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupNativeNotification;
         private System.Windows.Forms.CheckBox nativeNotificationAutoCopy;
+        private System.Windows.Forms.CheckBox checkBoxAutoStart;
     }
 }

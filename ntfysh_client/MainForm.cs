@@ -1,4 +1,5 @@
 ﻿using Microsoft.Toolkit.Uwp.Notifications;
+using Microsoft.Win32;
 using Newtonsoft.Json;
 using ntfysh_client.Notifications;
 using System;
@@ -237,6 +238,28 @@ namespace ntfysh_client
 
             SaveTopicsToFile();
         }
+        private void UpdateAutoStart()
+        {
+            const string runKeyPath = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Run";
+            string appName = "ntfysh_client";   // 或 Application.ProductName，确保唯一
+            string execPath = Application.ExecutablePath;
+
+            using RegistryKey? rk = Registry.CurrentUser.OpenSubKey(runKeyPath, writable: true);
+            if (rk == null) return;
+
+            if (Program.Settings.AutoStartEnabled)
+            {
+                rk.SetValue(appName, execPath);
+            }
+            else
+            {
+                try
+                {
+                    rk.DeleteValue(appName, throwOnMissingValue: false);
+                }
+                catch { /* 忽略可能的权限异常 */ }
+            }
+        }
 
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -251,7 +274,8 @@ namespace ntfysh_client
             dialog.CustomTrayNotificationsShowInDarkMode = Program.Settings.CustomTrayNotificationsShowInDarkMode;
             dialog.CustomTrayNotificationsPlayDefaultWindowsSound = Program.Settings.CustomTrayNotificationsPlayDefaultWindowsSound;
             dialog.Timeout = Program.Settings.Timeout; // set timeout last so bounds are setup before setting value
-            dialog.NativeNotificationsAutoCopyToClipboard = Program.Settings.NativeNotificationsAutoCopyToClipboard; 
+            dialog.NativeNotificationsAutoCopyToClipboard = Program.Settings.NativeNotificationsAutoCopyToClipboard;
+            dialog.AutoStartEnabled = Program.Settings.AutoStartEnabled;
 
 
             //Show dialog
@@ -269,6 +293,10 @@ namespace ntfysh_client
             Program.Settings.CustomTrayNotificationsShowInDarkMode = dialog.CustomTrayNotificationsShowInDarkMode;
             Program.Settings.CustomTrayNotificationsPlayDefaultWindowsSound = dialog.CustomTrayNotificationsPlayDefaultWindowsSound;
             Program.Settings.NativeNotificationsAutoCopyToClipboard = dialog.NativeNotificationsAutoCopyToClipboard;
+            Program.Settings.AutoStartEnabled = dialog.AutoStartEnabled;
+
+            UpdateAutoStart();  // 根据当前设置更新自启动状态
+            SaveSettingsToFile();
 
             //Save new settings persistently
             SaveSettingsToFile();
@@ -430,7 +458,7 @@ namespace ntfysh_client
             CustomTrayNotificationsShowInDarkMode = false,
             CustomTrayNotificationsPlayDefaultWindowsSound = true,
             NativeNotificationsAutoCopyToClipboard = false,   
-            //AutoStartEnabled = false                       
+            AutoStartEnabled = false                       
         };
 
         private void MergeSettingsRevisions(SettingsModel older, SettingsModel newer)
@@ -454,7 +482,7 @@ namespace ntfysh_client
             if (older.Revision < 3)
             {
                 older.NativeNotificationsAutoCopyToClipboard = newer.NativeNotificationsAutoCopyToClipboard;
-                //older.AutoStartEnabled = newer.AutoStartEnabled;
+                older.AutoStartEnabled = newer.AutoStartEnabled;
             }
             older.Revision = newer.Revision;
 
@@ -511,6 +539,8 @@ namespace ntfysh_client
                 MergeSettingsRevisions(Program.Settings, defaultSettings);
                 SaveSettingsToFile();
             }
+
+            UpdateAutoStart();
         }
 
 
