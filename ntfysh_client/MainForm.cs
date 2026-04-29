@@ -251,6 +251,8 @@ namespace ntfysh_client
             dialog.CustomTrayNotificationsShowInDarkMode = Program.Settings.CustomTrayNotificationsShowInDarkMode;
             dialog.CustomTrayNotificationsPlayDefaultWindowsSound = Program.Settings.CustomTrayNotificationsPlayDefaultWindowsSound;
             dialog.Timeout = Program.Settings.Timeout; // set timeout last so bounds are setup before setting value
+            dialog.NativeNotificationsAutoCopyToClipboard = Program.Settings.NativeNotificationsAutoCopyToClipboard; 
+
 
             //Show dialog
             DialogResult result = dialog.ShowDialog();
@@ -266,6 +268,7 @@ namespace ntfysh_client
             Program.Settings.CustomTrayNotificationsShowTimeoutBar = dialog.CustomTrayNotificationsShowTimeoutBar;
             Program.Settings.CustomTrayNotificationsShowInDarkMode = dialog.CustomTrayNotificationsShowInDarkMode;
             Program.Settings.CustomTrayNotificationsPlayDefaultWindowsSound = dialog.CustomTrayNotificationsPlayDefaultWindowsSound;
+            Program.Settings.NativeNotificationsAutoCopyToClipboard = dialog.NativeNotificationsAutoCopyToClipboard;
 
             //Save new settings persistently
             SaveSettingsToFile();
@@ -418,7 +421,7 @@ namespace ntfysh_client
 
         private SettingsModel GetDefaultSettings() => new()
         {
-            Revision = 2,
+            Revision = 3,      // 更新版本号
             Timeout = 5,
             ReconnectAttempts = 10,
             ReconnectAttemptDelay = 3,
@@ -426,6 +429,8 @@ namespace ntfysh_client
             CustomTrayNotificationsShowTimeoutBar = true,
             CustomTrayNotificationsShowInDarkMode = false,
             CustomTrayNotificationsPlayDefaultWindowsSound = true,
+            NativeNotificationsAutoCopyToClipboard = false,   
+            //AutoStartEnabled = false                       
         };
 
         private void MergeSettingsRevisions(SettingsModel older, SettingsModel newer)
@@ -445,6 +450,13 @@ namespace ntfysh_client
                 older.CustomTrayNotificationsShowInDarkMode = newer.CustomTrayNotificationsShowInDarkMode;
                 older.CustomTrayNotificationsPlayDefaultWindowsSound = newer.CustomTrayNotificationsPlayDefaultWindowsSound;
             }
+
+            if (older.Revision < 3)
+            {
+                older.NativeNotificationsAutoCopyToClipboard = newer.NativeNotificationsAutoCopyToClipboard;
+                //older.AutoStartEnabled = newer.AutoStartEnabled;
+            }
+            older.Revision = newer.Revision;
 
             //Update the revision
             older.Revision = newer.Revision;

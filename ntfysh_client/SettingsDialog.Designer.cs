@@ -263,7 +263,7 @@ namespace ntfysh_client
             nativeNotificationAutoCopy.Name = "nativeNotificationAutoCopy";
             nativeNotificationAutoCopy.Size = new System.Drawing.Size(270, 28);
             nativeNotificationAutoCopy.TabIndex = 0;
-            nativeNotificationAutoCopy.Text = "自动复制通知内容（不可用）";
+            nativeNotificationAutoCopy.Text = "自动复制通知内容";
             nativeNotificationAutoCopy.UseVisualStyleBackColor = true;
             // 
             // SettingsDialog

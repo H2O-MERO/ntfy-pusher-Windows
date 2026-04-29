@@ -33,8 +33,8 @@ namespace ntfysh_client
             set
             {
                 useNativeWindowsNotifications.Checked = value;
-                groupNativeNotification.Enabled = !value;
-                NotificationsMethod = (value) ? NotificationsType.NativeWindows : NotificationsType.CustomTray;
+                groupNativeNotification.Enabled = value;   
+                NotificationsMethod = value ? NotificationsType.NativeWindows : NotificationsType.CustomTray;
             }
         }
 
@@ -70,15 +70,12 @@ namespace ntfysh_client
         }
         #endregion
 
-        #region: Windows native notification options
-
-
+        #region: Native notification options
         public bool NativeNotificationsAutoCopyToClipboard
         {
             get => nativeNotificationAutoCopy.Checked;
             set => nativeNotificationAutoCopy.Checked = value;
         }
-
         #endregion
 
         public SettingsDialog()
@@ -100,7 +97,6 @@ namespace ntfysh_client
         private void SetNotificationsUiElements()
         {
             groupCustomNotificationSettings.Enabled = useCustomTrayNotifications.Checked;
-            //groupNativeNotification.Enabled = !useCustomTrayNotifications.Checked;
             timeoutLabel.Text = useCustomTrayNotifications.Checked ? _customNotificationsTimeout : _windowsNotificationsTimeout;
         }
 
