@@ -311,7 +311,7 @@ namespace ntfysh_client
                 MessageBox.Show("语言更改将在程序重启后生效。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-        
+
 
         private void notificationTopics_SelectedValueChanged(object sender, EventArgs e)
         {
@@ -491,6 +491,11 @@ namespace ntfysh_client
         }
 
         private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

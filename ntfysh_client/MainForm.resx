@@ -117,49 +117,140 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;无订阅的主题.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 30</value>
+  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 22</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
-    <value>toolStripMenuItem1</value>
+  <data name="&gt;&gt;notifyIcon.Name" xml:space="preserve">
+    <value>notifyIcon</value>
   </data>
-  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>设置</value>
+  <data name="&gt;&gt;subscribeNewTopic.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="removeSelectedTopics.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;subscribeNewTopic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exit</value>
   </data>
   <data name="&gt;&gt;settingsToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 30</value>
-  </data>
   <data name="无订阅的主题.Size" type="System.Drawing.Size, System.Drawing">
     <value>386, 225</value>
   </data>
-  <data name="subscribeNewTopic.Text" xml:space="preserve">
-    <value>订阅新主题(Topic)</value>
+  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>帮助</value>
   </data>
-  <data name="&gt;&gt;removeSelectedTopics.Name" xml:space="preserve">
-    <value>removeSelectedTopics</value>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="notifyIcon.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;removeSelectedTopics.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="ntfyshWebsiteToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAABCUlE
+        QVQ4T91Ru3LCMBC8yUxcJT+SOhJlCh5FoOUbsKixRcePZJDc2ecvMfwE/ILTxBWZlbFHyBP6sDMqbu/2
+        br0megzEolzEkg9KcqMkX7zXXPl5qOnhxKI4rUU5Xr5x5PdQq/d8gv6fS5QsjhCHvI/ViKdKchXyDkoU
+        9fqDX0KekmxBqT1QaprnTfaDOdL2gtrx2rSO4AA2B2JtT5SYMe04unGw44i22cT1saTLAEN9BtocIXYZ
+        yHKmJJ9Xo/zz5ki6n5I27VIEhAvdX3ja2DoW+fe1rgZiIPl6JW3rkG4BB7B5D76DAboMMIRv9uEysDPS
+        5kzb/dBZDwSEC0gd6XfP1aa6L/5X+AXXsZpYG9LldQAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="removeSelectedTopics.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 30</value>
+  <data name="无订阅的主题.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="removeSelectedTopics.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 30</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem1.Name" xml:space="preserve">
+    <value>exitToolStripMenuItem1</value>
+  </data>
+  <data name="exitToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAAAhklE
+        QVQ4T2NgoBY4zi6ugC6GDWBVBxI8yiX26jC3uAO6HDIAyYPUYTXkMI+ozREusZdHucWd0OVA4AiPiC0+
+        eTDAZQgucawAXTE6nygA8itYE5doCYgmFDZYAUjzUW7x/yAaXY4goMgF6H5G5+MFuKKKKENwaYYBvIZQ
+        JSViFcQCiFVHPwAA6g5YEuFUY5cAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="removeSelectedTopics.Text" xml:space="preserve">
+    <value>移除选择的主题</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;showControlWindowToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAAAvklE
+        QVQ4T8WOPQoCMRBGZ9KELRez4CYxzFzCG3gKwRN4GQs7a1mw9ACew8oFCxtLC7uVAZWwSDCw6MAjP/C9
+        +QCGGGZumbnLpI0FXQihzkEywwmI6PyhYhLJxA0O1tpRDpL5rYCI9lI9KVBKLRBxJ3dE3Cql5q9ACGFJ
+        RNekwBhTA8CpLMsJAByrqhrHLZj5khQ8N28QcY2IK3l7712WQGs9A4B7URRT55wnopucXwv6xA1i+oJG
+        PjJp3oK/zgOq9oYvURh7ngAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 2, 0, 2</value>
+  </data>
+  <data name="无订阅的主题.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;removeSelectedTopics.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="subscribeNewTopic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 285</value>
+  </data>
+  <data name="&gt;&gt;removeSelectedTopics.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="exitToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAAAhklE
+        QVQ4T2NgoBY4zi6ugC6GDWBVBxI8yiX26jC3uAO6HDIAyYPUYTXkMI+ozREusZdHucWd0OVA4AiPiC0+
+        eTDAZQgucawAXTE6nygA8itYE5doCYgmFDZYAUjzUW7x/yAaXY4goMgF6H5G5+MFuKKKKENwaYYBvIZQ
+        JSViFcQCiFVHPwAA6g5YEuFUY5cAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>系统</value>
+  </data>
+  <data name="ntfyshWebsiteToolStripMenuItem.Text" xml:space="preserve">
+    <value>打开网页ntfy.sh</value>
+  </data>
+  <data name="&gt;&gt;ntfyshWebsiteToolStripMenuItem.Name" xml:space="preserve">
+    <value>ntfyshWebsiteToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
+    <value>aboutToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;helpToolStripMenuItem.Name" xml:space="preserve">
+    <value>helpToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -340,136 +431,180 @@
         /////8AA////////wAD////////AAA==
 </value>
   </data>
-  <data name="showControlWindowToolStripMenuItem.Text" xml:space="preserve">
-    <value>Show control window</value>
-  </data>
-  <data name="&gt;&gt;helpToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;exitToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 21</value>
+  <data name="无订阅的主题.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 52</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;showControlWindowToolStripMenuItem.Name" xml:space="preserve">
-    <value>showControlWindowToolStripMenuItem</value>
+  <data name="&gt;&gt;trayContextMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="exitToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAAAhklE
-        QVQ4T2NgoBY4zi6ugC6GDWBVBxI8yiX26jC3uAO6HDIAyYPUYTXkMI+ozREusZdHucWd0OVA4AiPiC0+
-        eTDAZQgucawAXTE6nygA8itYE5doCYgmFDZYAUjzUW7x/yAaXY4goMgF6H5G5+MFuKKKKENwaYYBvIZQ
-        JSViFcQCiFVHPwAA6g5YEuFUY5cAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>系统</value>
-  </data>
-  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
-    <value>关于</value>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="removeSelectedTopics.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
-    <value>帮助</value>
-  </data>
-  <data name="无订阅的主题.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;helpToolStripMenuItem.Name" xml:space="preserve">
-    <value>helpToolStripMenuItem</value>
-  </data>
-  <data name="exitToolStripMenuItem1.Text" xml:space="preserve">
-    <value>退出</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="&gt;&gt;subscribeNewTopic.Name" xml:space="preserve">
-    <value>subscribeNewTopic</value>
-  </data>
-  <data name="无订阅的主题.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 52</value>
-  </data>
-  <data name="&gt;&gt;exitToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ntfyshWebsiteToolStripMenuItem.Text" xml:space="preserve">
-    <value>打开网页ntfy.sh</value>
-  </data>
-  <data name="&gt;&gt;subscribeNewTopic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="无订阅的主题.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="subscribeNewTopic.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ntfyshWebsiteToolStripMenuItem.Name" xml:space="preserve">
-    <value>ntfyshWebsiteToolStripMenuItem</value>
-  </data>
-  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 22</value>
-  </data>
-  <data name="exitToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAAAhklE
-        QVQ4T2NgoBY4zi6ugC6GDWBVBxI8yiX26jC3uAO6HDIAyYPUYTXkMI+ozREusZdHucWd0OVA4AiPiC0+
-        eTDAZQgucawAXTE6nygA8itYE5doCYgmFDZYAUjzUW7x/yAaXY4goMgF6H5G5+MFuKKKKENwaYYBvIZQ
-        JSViFcQCiFVHPwAA6g5YEuFUY5cAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;removeSelectedTopics.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>412, 327</value>
+  <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;fileToolStripMenuItem.Name" xml:space="preserve">
+    <value>fileToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;helpToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
+    <value>toolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="subscribeNewTopic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;removeSelectedTopics.Name" xml:space="preserve">
+    <value>removeSelectedTopics</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;notifyIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA69AAAOvQFH+5CtAAABQUlE
+        QVQ4T7WTTU4CQRCF5whG48KxnfoqMxfAcyjoDdz4cw1xLXoC2AgnULmPBuMST4B5pEigGeNGK+mkp1+/
+        V1Wva4riv8Ld79x9Eauf460BXAPjlNIu8GpmF1ruPo2zse7kvGUAV8AbMHL3D+DLzDp1XR9r7+4zYAi8
+        t4oAE12oquoA6JnZo/Za2gPdwEaqJOcXZrYjdTM7q+v6CHhQJZF5oDN3P9W32tkgyyT1DMwj2wB4Tikd
+        Nk2T3F3YILC57m4YK6dllvpVmcoi4gqP7LNopxPGLrYEBP4moCRtAn09VTi/bEFlSyTIwu4D04tMt2Zj
+        zcTzMFEis3UTq6o6AT6bptnfICtiSEbxVN2WZ+wFplmY5Pz1QRquBin67UTZOtMMqMqbnL8M4FLqZVnu
+        AS8to/z0IzmPMHb1M93m+J/FN8xxh3CJx7rTAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ntfy pusher</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="showControlWindowToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 30</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;showControlWindowToolStripMenuItem.Name" xml:space="preserve">
+    <value>showControlWindowToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;subscribeNewTopic.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 17</value>
+  </data>
+  <data name="&gt;&gt;ntfyshWebsiteToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="subscribeNewTopic.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 6</value>
+  </data>
   <data name="ntfyshWebsiteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 22</value>
   </data>
-  <data name="&gt;&gt;fileToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>412, 25</value>
   </data>
-  <data name="&gt;&gt;trayContextMenu.Name" xml:space="preserve">
-    <value>trayContextMenu</value>
+  <data name="removeSelectedTopics.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 285</value>
+  </data>
+  <data name="exitToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 30</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 30</value>
+  </data>
+  <data name="showControlWindowToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAAAgElE
+        QVQ4T2NgoAZQVFR8oKio+J9E/ADZgP9ycnKSpGCQHuoZoKCg8BiLE/FikB5kF+yXkpISJgWD9BBtQIbp
+        ykeZZqv+gzCITbIBII0eWsVaIAxi4zQA2SZk24g2AFkhsmKivYDLAGwYqwG4vIANYzWAFIxuwAqQAIl4
+        BdyAAQUAg96z/bGuwC8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
+    <value>exitToolStripMenuItem</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;subscribeNewTopic.Name" xml:space="preserve">
+    <value>subscribeNewTopic</value>
+  </data>
+  <data name="removeSelectedTopics.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;无订阅的主题.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="subscribeNewTopic.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 30</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 17</value>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
+  <data name="removeSelectedTopics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 30</value>
+  </data>
+  <data name="无订阅的主题.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="无订阅的主题.ItemHeight" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="trayContextMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 64</value>
+  </data>
+  <data name="removeSelectedTopics.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="subscribeNewTopic.Text" xml:space="preserve">
+    <value>订阅新主题(Topic)</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 30</value>
   </data>
   <data name="notifyIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -650,197 +785,62 @@
         /////8AA////////wAD////////AAA==
 </value>
   </data>
-  <data name="removeSelectedTopics.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="trayContextMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 64</value>
-  </data>
-  <data name="&gt;&gt;trayContextMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
-  </data>
-  <data name="&gt;&gt;ntfyshWebsiteToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="subscribeNewTopic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 285</value>
-  </data>
-  <data name="ntfyshWebsiteToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAABCUlE
-        QVQ4T91Ru3LCMBC8yUxcJT+SOhJlCh5FoOUbsKixRcePZJDc2ecvMfwE/ILTxBWZlbFHyBP6sDMqbu/2
-        br0megzEolzEkg9KcqMkX7zXXPl5qOnhxKI4rUU5Xr5x5PdQq/d8gv6fS5QsjhCHvI/ViKdKchXyDkoU
-        9fqDX0KekmxBqT1QaprnTfaDOdL2gtrx2rSO4AA2B2JtT5SYMe04unGw44i22cT1saTLAEN9BtocIXYZ
-        yHKmJJ9Xo/zz5ki6n5I27VIEhAvdX3ja2DoW+fe1rgZiIPl6JW3rkG4BB7B5D76DAboMMIRv9uEysDPS
-        5kzb/dBZDwSEC0gd6XfP1aa6L/5X+AXXsZpYG9LldQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;showControlWindowToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA6+AAAOvgHqQrHAAAABQUlE
-        QVQ4T7WTTU4CQRCF5whG48KxnfoqMxfAcyjoDdz4cw1xLXoC2AgnULmPBuMST4B5pEigGeNGK+mkp1+/
-        V1Wva4riv8Ld79x9Eauf460BXAPjlNIu8GpmF1ruPo2zse7kvGUAV8AbMHL3D+DLzDp1XR9r7+4zYAi8
-        t4oAE12oquoA6JnZo/Za2gPdwEaqJOcXZrYjdTM7q+v6CHhQJZF5oDN3P9W32tkgyyT1DMwj2wB4Tikd
-        Nk2T3F3YILC57m4YK6dllvpVmcoi4gqP7LNopxPGLrYEBP4moCRtAn09VTi/bEFlSyTIwu4D04tMt2Zj
-        zcTzMFEis3UTq6o6AT6bptnfICtiSEbxVN2WZ+wFplmY5Pz1QRquBin67UTZOtMMqMqbnL8M4FLqZVnu
-        AS8to/z0IzmPMHb1M93m+J/FN8xxh3CJx7rTAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="&gt;&gt;subscribeNewTopic.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;subscribeNewTopic.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;notifyIcon.Name" xml:space="preserve">
-    <value>notifyIcon</value>
-  </data>
-  <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
-    <value>exitToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;无订阅的主题.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="无订阅的主题.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;notifyIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="removeSelectedTopics.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 285</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 17</value>
-  </data>
-  <data name="&gt;&gt;exitToolStripMenuItem1.Name" xml:space="preserve">
-    <value>exitToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;无订阅的主题.Name" xml:space="preserve">
-    <value>无订阅的主题</value>
-  </data>
-  <data name="&gt;&gt;无订阅的主题.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>ntfy pusher</value>
-  </data>
-  <data name="无订阅的主题.ItemHeight" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="removeSelectedTopics.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;removeSelectedTopics.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 25</value>
-  </data>
-  <data name="notifyIcon.Text" xml:space="preserve">
-    <value>ntfy.sh</value>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>关于</value>
   </data>
   <data name="subscribeNewTopic.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;无订阅的主题.Name" xml:space="preserve">
+    <value>无订阅的主题</value>
   </data>
-  <data name="exitToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 30</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>412, 327</value>
   </data>
-  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
-    <value>Exit</value>
+  <data name="exitToolStripMenuItem1.Text" xml:space="preserve">
+    <value>退出</value>
   </data>
-  <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 21</value>
   </data>
-  <data name="aboutToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAAAvklE
-        QVQ4T8WOPQoCMRBGZ9KELRez4CYxzFzCG3gKwRN4GQs7a1mw9ACew8oFCxtLC7uVAZWwSDCw6MAjP/C9
-        +QCGGGZumbnLpI0FXQihzkEywwmI6PyhYhLJxA0O1tpRDpL5rYCI9lI9KVBKLRBxJ3dE3Cql5q9ACGFJ
-        RNekwBhTA8CpLMsJAByrqhrHLZj5khQ8N28QcY2IK3l7712WQGs9A4B7URRT55wnopucXwv6xA1i+oJG
-        PjJp3oK/zgOq9oYvURh7ngAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 6</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 30</value>
-  </data>
-  <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="showControlWindowToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAAAgElE
-        QVQ4T2NgoAZQVFR8oKio+J9E/ADZgP9ycnKSpGCQHuoZoKCg8BiLE/FikB5kF+yXkpISJgWD9BBtQIbp
-        ykeZZqv+gzCITbIBII0eWsVaIAxi4zQA2SZk24g2AFkhsmKivYDLAGwYqwG4vIANYzWAFIxuwAqQAIl4
-        BdyAAQUAg96z/bGuwC8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="&gt;&gt;removeSelectedTopics.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="showControlWindowToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 30</value>
-  </data>
-  <data name="&gt;&gt;fileToolStripMenuItem.Name" xml:space="preserve">
-    <value>fileToolStripMenuItem</value>
-  </data>
-  <data name="subscribeNewTopic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="showControlWindowToolStripMenuItem.Text" xml:space="preserve">
+    <value>Show control window</value>
   </data>
   <data name="&gt;&gt;settingsToolStripMenuItem.Name" xml:space="preserve">
     <value>settingsToolStripMenuItem</value>
   </data>
-  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 2, 0, 2</value>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
-    <value>aboutToolStripMenuItem</value>
+  <data name="&gt;&gt;trayContextMenu.Name" xml:space="preserve">
+    <value>trayContextMenu</value>
+  </data>
+  <data name="notifyIcon.Text" xml:space="preserve">
+    <value>ntfy.sh</value>
+  </data>
+  <data name="&gt;&gt;无订阅的主题.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;无订阅的主题.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;fileToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>已订阅通知主题：</value>
   </data>
-  <data name="removeSelectedTopics.Text" xml:space="preserve">
-    <value>移除选择的主题</value>
+  <data name="notifyIcon.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <metadata name="notifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>en-US</value>
   </metadata>
   <metadata name="trayContextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>123, 17</value>
@@ -848,7 +848,7 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>269, 17</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>en-US</value>
+  <metadata name="notifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
 </root>

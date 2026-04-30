@@ -117,7 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="subscribeNewTopic.Text" xml:space="preserve">
+    <value>Subscribe to new topics</value>
+  </data>
+  <data name="removeSelectedTopics.Text" xml:space="preserve">
+    <value>Remove selected topics</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="showControlWindowToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAAAgElE
+        QVQ4T2NgoAZQVFR8oKio+J9E/ADZgP9ycnKSpGCQHuoZoKCg8BiLE/FikB5kF+yXkpISJgWD9BBtQIbp
+        ykeZZqv+gzCITbIBII0eWsVaIAxi4zQA2SZk24g2AFkhsmKivYDLAGwYqwG4vIANYzWAFIxuwAqQAIl4
+        BdyAAQUAg96z/bGuwC8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="exitToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAAAhklE
+        QVQ4T2NgoBY4zi6ugC6GDWBVBxI8yiX26jC3uAO6HDIAyYPUYTXkMI+ozREusZdHucWd0OVA4AiPiC0+
+        eTDAZQgucawAXTE6nygA8itYE5doCYgmFDZYAUjzUW7x/yAaXY4goMgF6H5G5+MFuKKKKENwaYYBvIZQ
+        JSViFcQCiFVHPwAA6g5YEuFUY5cAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="notifyIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAMjIAAAEAIADIKAAAFgAAACgAAAAyAAAAZAAAAAEAIAAAAAAAECcAACMuAAAjLgAAAAAAAAAA
@@ -297,24 +321,6 @@
         /////8AA////////wAD////////AAA==
 </value>
   </data>
-  <data name="showControlWindowToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAAAgElE
-        QVQ4T2NgoAZQVFR8oKio+J9E/ADZgP9ycnKSpGCQHuoZoKCg8BiLE/FikB5kF+yXkpISJgWD9BBtQIbp
-        ykeZZqv+gzCITbIBII0eWsVaIAxi4zQA2SZk24g2AFkhsmKivYDLAGwYqwG4vIANYzWAFIxuwAqQAIl4
-        BdyAAQUAg96z/bGuwC8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="exitToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAAAhklE
-        QVQ4T2NgoBY4zi6ugC6GDWBVBxI8yiX26jC3uAO6HDIAyYPUYTXkMI+ozREusZdHucWd0OVA4AiPiC0+
-        eTDAZQgucawAXTE6nygA8itYE5doCYgmFDZYAUjzUW7x/yAaXY4goMgF6H5G5+MFuKKKKENwaYYBvIZQ
-        JSViFcQCiFVHPwAA6g5YEuFUY5cAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="exitToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
@@ -330,7 +336,7 @@
   <data name="settingsToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA6+AAAOvgHqQrHAAAABQUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA69AAAOvQFH+5CtAAABQUlE
         QVQ4T7WTTU4CQRCF5whG48KxnfoqMxfAcyjoDdz4cw1xLXoC2AgnULmPBuMST4B5pEigGeNGK+mkp1+/
         V1Wva4riv8Ld79x9Eauf460BXAPjlNIu8GpmF1ruPo2zse7kvGUAV8AbMHL3D+DLzDp1XR9r7+4zYAi8
         t4oAE12oquoA6JnZo/Za2gPdwEaqJOcXZrYjdTM7q+v6CHhQJZF5oDN3P9W32tkgyyT1DMwj2wB4Tikd
@@ -365,6 +371,9 @@
   <data name="ntfyshWebsiteToolStripMenuItem.Text" xml:space="preserve">
     <value>Open ntfy.sh</value>
   </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 6</value>
+  </data>
   <data name="aboutToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
@@ -386,6 +395,12 @@
   </data>
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
     <value>Help</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 17</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Subscribed topic:</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

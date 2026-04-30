@@ -154,6 +154,7 @@ namespace ntfysh_client
             // 
             resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
+            label1.Click += label1_Click;
             // 
             // MainForm
             // 

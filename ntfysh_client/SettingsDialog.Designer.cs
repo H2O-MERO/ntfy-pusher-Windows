@@ -31,6 +31,7 @@ namespace ntfysh_client
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsDialog));
             buttonPanel = new System.Windows.Forms.Panel();
             cancelButton = new System.Windows.Forms.Button();
             saveButton = new System.Windows.Forms.Button();
@@ -64,248 +65,154 @@ namespace ntfysh_client
             // 
             // buttonPanel
             // 
+            resources.ApplyResources(buttonPanel, "buttonPanel");
             buttonPanel.BackColor = System.Drawing.SystemColors.Control;
             buttonPanel.Controls.Add(cancelButton);
             buttonPanel.Controls.Add(saveButton);
-            buttonPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            buttonPanel.Location = new System.Drawing.Point(0, 533);
-            buttonPanel.Margin = new System.Windows.Forms.Padding(4);
             buttonPanel.Name = "buttonPanel";
-            buttonPanel.Size = new System.Drawing.Size(531, 58);
-            buttonPanel.TabIndex = 0;
             // 
             // cancelButton
             // 
-            cancelButton.Location = new System.Drawing.Point(363, 18);
-            cancelButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            resources.ApplyResources(cancelButton, "cancelButton");
             cancelButton.Name = "cancelButton";
-            cancelButton.Size = new System.Drawing.Size(75, 26);
-            cancelButton.TabIndex = 2;
-            cancelButton.Text = "取消";
             cancelButton.UseVisualStyleBackColor = true;
             cancelButton.Click += cancelButton_Click;
             // 
             // saveButton
             // 
-            saveButton.Location = new System.Drawing.Point(444, 18);
-            saveButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            resources.ApplyResources(saveButton, "saveButton");
             saveButton.Name = "saveButton";
-            saveButton.Size = new System.Drawing.Size(75, 26);
-            saveButton.TabIndex = 1;
-            saveButton.Text = "保存";
             saveButton.UseVisualStyleBackColor = true;
             saveButton.Click += saveButton_Click;
             // 
             // timeoutLabel
             // 
-            timeoutLabel.AutoSize = true;
-            timeoutLabel.Location = new System.Drawing.Point(12, 62);
-            timeoutLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(timeoutLabel, "timeoutLabel");
             timeoutLabel.Name = "timeoutLabel";
-            timeoutLabel.Size = new System.Drawing.Size(296, 17);
-            timeoutLabel.TabIndex = 3;
-            timeoutLabel.Text = "通知提示超时（秒，使用-1表示需要手动关闭通知）：";
             timeoutLabel.Click += timeoutLabel_Click;
             // 
             // timeout
             // 
-            timeout.Location = new System.Drawing.Point(12, 84);
-            timeout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            resources.ApplyResources(timeout, "timeout");
             timeout.Maximum = new decimal(new int[] { -1981284353, -1966660860, 0, 0 });
             timeout.Name = "timeout";
-            timeout.Size = new System.Drawing.Size(506, 23);
-            timeout.TabIndex = 4;
             // 
             // reconnectAttempts
             // 
-            reconnectAttempts.Location = new System.Drawing.Point(11, 135);
-            reconnectAttempts.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            resources.ApplyResources(reconnectAttempts, "reconnectAttempts");
             reconnectAttempts.Maximum = new decimal(new int[] { -1981284353, -1966660860, 0, 0 });
             reconnectAttempts.Name = "reconnectAttempts";
-            reconnectAttempts.Size = new System.Drawing.Size(506, 23);
-            reconnectAttempts.TabIndex = 6;
             // 
             // reconnectAttemptsLabel
             // 
-            reconnectAttemptsLabel.AutoSize = true;
-            reconnectAttemptsLabel.Location = new System.Drawing.Point(11, 113);
-            reconnectAttemptsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(reconnectAttemptsLabel, "reconnectAttemptsLabel");
             reconnectAttemptsLabel.Name = "reconnectAttemptsLabel";
-            reconnectAttemptsLabel.Size = new System.Drawing.Size(260, 17);
-            reconnectAttemptsLabel.TabIndex = 5;
-            reconnectAttemptsLabel.Text = "最大重新连接重试尝试次数（需要重新启动）：";
             // 
             // reconnectAttemptDelay
             // 
-            reconnectAttemptDelay.Location = new System.Drawing.Point(11, 186);
-            reconnectAttemptDelay.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            resources.ApplyResources(reconnectAttemptDelay, "reconnectAttemptDelay");
             reconnectAttemptDelay.Maximum = new decimal(new int[] { -1981284353, -1966660860, 0, 0 });
             reconnectAttemptDelay.Name = "reconnectAttemptDelay";
-            reconnectAttemptDelay.Size = new System.Drawing.Size(506, 23);
-            reconnectAttemptDelay.TabIndex = 8;
             // 
             // reconnectAttemptDelayLabel
             // 
-            reconnectAttemptDelayLabel.AutoSize = true;
-            reconnectAttemptDelayLabel.Location = new System.Drawing.Point(11, 164);
-            reconnectAttemptDelayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(reconnectAttemptDelayLabel, "reconnectAttemptDelayLabel");
             reconnectAttemptDelayLabel.Name = "reconnectAttemptDelayLabel";
-            reconnectAttemptDelayLabel.Size = new System.Drawing.Size(224, 17);
-            reconnectAttemptDelayLabel.TabIndex = 7;
-            reconnectAttemptDelayLabel.Text = "尝试之间的延迟（秒，需要重新启动）：";
             // 
             // nativeVersusCustomNotificationsGroupBox
             // 
+            resources.ApplyResources(nativeVersusCustomNotificationsGroupBox, "nativeVersusCustomNotificationsGroupBox");
             nativeVersusCustomNotificationsGroupBox.Controls.Add(useCustomTrayNotifications);
             nativeVersusCustomNotificationsGroupBox.Controls.Add(useNativeWindowsNotifications);
-            nativeVersusCustomNotificationsGroupBox.Location = new System.Drawing.Point(11, 218);
-            nativeVersusCustomNotificationsGroupBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             nativeVersusCustomNotificationsGroupBox.Name = "nativeVersusCustomNotificationsGroupBox";
-            nativeVersusCustomNotificationsGroupBox.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            nativeVersusCustomNotificationsGroupBox.Size = new System.Drawing.Size(506, 76);
-            nativeVersusCustomNotificationsGroupBox.TabIndex = 9;
             nativeVersusCustomNotificationsGroupBox.TabStop = false;
             // 
             // useCustomTrayNotifications
             // 
-            useCustomTrayNotifications.AutoSize = true;
-            useCustomTrayNotifications.Location = new System.Drawing.Point(6, 45);
-            useCustomTrayNotifications.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            resources.ApplyResources(useCustomTrayNotifications, "useCustomTrayNotifications");
             useCustomTrayNotifications.Name = "useCustomTrayNotifications";
-            useCustomTrayNotifications.Size = new System.Drawing.Size(283, 21);
-            useCustomTrayNotifications.TabIndex = 1;
             useCustomTrayNotifications.TabStop = true;
-            useCustomTrayNotifications.Text = "使用ntfysh-windows自定义托盘通知（不推荐）";
             useCustomTrayNotifications.UseVisualStyleBackColor = true;
             useCustomTrayNotifications.CheckedChanged += UseCustomTrayNotifications_CheckedChanged;
             // 
             // useNativeWindowsNotifications
             // 
-            useNativeWindowsNotifications.AutoSize = true;
-            useNativeWindowsNotifications.Location = new System.Drawing.Point(6, 17);
-            useNativeWindowsNotifications.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            resources.ApplyResources(useNativeWindowsNotifications, "useNativeWindowsNotifications");
             useNativeWindowsNotifications.Name = "useNativeWindowsNotifications";
-            useNativeWindowsNotifications.Size = new System.Drawing.Size(199, 21);
-            useNativeWindowsNotifications.TabIndex = 0;
             useNativeWindowsNotifications.TabStop = true;
-            useNativeWindowsNotifications.Text = "使用Windows原生通知（推荐）";
             useNativeWindowsNotifications.UseVisualStyleBackColor = true;
             // 
             // groupCustomNotificationSettings
             // 
+            resources.ApplyResources(groupCustomNotificationSettings, "groupCustomNotificationSettings");
             groupCustomNotificationSettings.Controls.Add(customNotificationsPlayWindowsNotificationAudio);
             groupCustomNotificationSettings.Controls.Add(customNotificationsShowInDarkMode);
             groupCustomNotificationSettings.Controls.Add(customNotificationsShowTimeoutBar);
-            groupCustomNotificationSettings.Location = new System.Drawing.Point(11, 328);
-            groupCustomNotificationSettings.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             groupCustomNotificationSettings.Name = "groupCustomNotificationSettings";
-            groupCustomNotificationSettings.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            groupCustomNotificationSettings.Size = new System.Drawing.Size(504, 98);
-            groupCustomNotificationSettings.TabIndex = 10;
             groupCustomNotificationSettings.TabStop = false;
             // 
             // customNotificationsPlayWindowsNotificationAudio
             // 
-            customNotificationsPlayWindowsNotificationAudio.AutoSize = true;
-            customNotificationsPlayWindowsNotificationAudio.Location = new System.Drawing.Point(6, 69);
-            customNotificationsPlayWindowsNotificationAudio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            resources.ApplyResources(customNotificationsPlayWindowsNotificationAudio, "customNotificationsPlayWindowsNotificationAudio");
             customNotificationsPlayWindowsNotificationAudio.Name = "customNotificationsPlayWindowsNotificationAudio";
-            customNotificationsPlayWindowsNotificationAudio.Size = new System.Drawing.Size(152, 21);
-            customNotificationsPlayWindowsNotificationAudio.TabIndex = 2;
-            customNotificationsPlayWindowsNotificationAudio.Text = "播放Windows通知声音";
             customNotificationsPlayWindowsNotificationAudio.UseVisualStyleBackColor = true;
             customNotificationsPlayWindowsNotificationAudio.CheckedChanged += customNotificationsPlayWindowsNotificationAudio_CheckedChanged;
             // 
             // customNotificationsShowInDarkMode
             // 
-            customNotificationsShowInDarkMode.AutoSize = true;
-            customNotificationsShowInDarkMode.Location = new System.Drawing.Point(6, 42);
-            customNotificationsShowInDarkMode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            resources.ApplyResources(customNotificationsShowInDarkMode, "customNotificationsShowInDarkMode");
             customNotificationsShowInDarkMode.Name = "customNotificationsShowInDarkMode";
-            customNotificationsShowInDarkMode.Size = new System.Drawing.Size(147, 21);
-            customNotificationsShowInDarkMode.TabIndex = 1;
-            customNotificationsShowInDarkMode.Text = "在深色模式下显示通知";
             customNotificationsShowInDarkMode.UseVisualStyleBackColor = true;
             // 
             // customNotificationsShowTimeoutBar
             // 
-            customNotificationsShowTimeoutBar.AutoSize = true;
-            customNotificationsShowTimeoutBar.Location = new System.Drawing.Point(6, 16);
-            customNotificationsShowTimeoutBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            resources.ApplyResources(customNotificationsShowTimeoutBar, "customNotificationsShowTimeoutBar");
             customNotificationsShowTimeoutBar.Name = "customNotificationsShowTimeoutBar";
-            customNotificationsShowTimeoutBar.Size = new System.Drawing.Size(159, 21);
-            customNotificationsShowTimeoutBar.TabIndex = 0;
-            customNotificationsShowTimeoutBar.Text = "在通知中显示超时进度条";
             customNotificationsShowTimeoutBar.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(11, 309);
+            resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(116, 17);
-            label1.TabIndex = 11;
-            label1.Text = "自定义托盘通知设置";
             // 
             // groupNativeNotification
             // 
+            resources.ApplyResources(groupNativeNotification, "groupNativeNotification");
             groupNativeNotification.Controls.Add(nativeNotificationAutoCopy);
-            groupNativeNotification.Location = new System.Drawing.Point(11, 432);
-            groupNativeNotification.Margin = new System.Windows.Forms.Padding(2);
             groupNativeNotification.Name = "groupNativeNotification";
-            groupNativeNotification.Padding = new System.Windows.Forms.Padding(2);
-            groupNativeNotification.Size = new System.Drawing.Size(504, 51);
-            groupNativeNotification.TabIndex = 3;
             groupNativeNotification.TabStop = false;
-            groupNativeNotification.Text = "Windows原生通知设置";
             groupNativeNotification.Enter += groupBox1_Enter;
             // 
             // nativeNotificationAutoCopy
             // 
-            nativeNotificationAutoCopy.AutoSize = true;
-            nativeNotificationAutoCopy.Location = new System.Drawing.Point(6, 21);
-            nativeNotificationAutoCopy.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(nativeNotificationAutoCopy, "nativeNotificationAutoCopy");
             nativeNotificationAutoCopy.Name = "nativeNotificationAutoCopy";
-            nativeNotificationAutoCopy.Size = new System.Drawing.Size(123, 21);
-            nativeNotificationAutoCopy.TabIndex = 0;
-            nativeNotificationAutoCopy.Text = "自动复制通知内容";
             nativeNotificationAutoCopy.UseVisualStyleBackColor = true;
             // 
             // checkBoxAutoStart
             // 
-            checkBoxAutoStart.AutoSize = true;
-            checkBoxAutoStart.Location = new System.Drawing.Point(17, 488);
+            resources.ApplyResources(checkBoxAutoStart, "checkBoxAutoStart");
             checkBoxAutoStart.Name = "checkBoxAutoStart";
-            checkBoxAutoStart.Size = new System.Drawing.Size(99, 21);
-            checkBoxAutoStart.TabIndex = 12;
-            checkBoxAutoStart.Text = "开机自动启动";
             checkBoxAutoStart.UseVisualStyleBackColor = true;
             checkBoxAutoStart.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // comboBoxLanguage
             // 
-            comboBoxLanguage.Location = new System.Drawing.Point(12, 29);
+            resources.ApplyResources(comboBoxLanguage, "comboBoxLanguage");
             comboBoxLanguage.Name = "comboBoxLanguage";
-            comboBoxLanguage.Size = new System.Drawing.Size(121, 25);
-            comboBoxLanguage.TabIndex = 0;
             comboBoxLanguage.SelectedIndexChanged += languageComboBox_SelectedIndexChanged;
             // 
             // languageLabel
             // 
-            languageLabel.AutoSize = true;
-            languageLabel.Location = new System.Drawing.Point(12, 9);
+            resources.ApplyResources(languageLabel, "languageLabel");
             languageLabel.Name = "languageLabel";
-            languageLabel.Size = new System.Drawing.Size(32, 17);
-            languageLabel.TabIndex = 14;
-            languageLabel.Text = "语言";
             languageLabel.Click += label3_Click;
             // 
             // SettingsDialog
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
-            ClientSize = new System.Drawing.Size(531, 591);
             Controls.Add(languageLabel);
             Controls.Add(comboBoxLanguage);
             Controls.Add(checkBoxAutoStart);
@@ -321,14 +228,11 @@ namespace ntfysh_client
             Controls.Add(timeoutLabel);
             Controls.Add(buttonPanel);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            Margin = new System.Windows.Forms.Padding(4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SettingsDialog";
             ShowIcon = false;
             ShowInTaskbar = false;
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            Text = "设置";
             Load += SettingsDialog_Load;
             buttonPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)timeout).EndInit();

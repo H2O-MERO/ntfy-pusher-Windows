@@ -117,4 +117,644 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupCustomNotificationSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;reconnectAttempts.Name" xml:space="preserve">
+    <value>reconnectAttempts</value>
+  </data>
+  <data name="&gt;&gt;timeout.Name" xml:space="preserve">
+    <value>timeout</value>
+  </data>
+  <data name="&gt;&gt;timeoutLabel.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;useCustomTrayNotifications.Name" xml:space="preserve">
+    <value>useCustomTrayNotifications</value>
+  </data>
+  <data name="reconnectAttemptDelayLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="customNotificationsShowTimeoutBar.Text" xml:space="preserve">
+    <value>在通知中显示超时进度条</value>
+  </data>
+  <data name="&gt;&gt;reconnectAttemptDelayLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="saveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;nativeNotificationAutoCopy.Parent" xml:space="preserve">
+    <value>groupNativeNotification</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="&gt;&gt;groupCustomNotificationSettings.Name" xml:space="preserve">
+    <value>groupCustomNotificationSettings</value>
+  </data>
+  <data name="customNotificationsShowInDarkMode.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Parent" xml:space="preserve">
+    <value>buttonPanel</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="saveButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;buttonPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="customNotificationsPlayWindowsNotificationAudio.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;useNativeWindowsNotifications.Parent" xml:space="preserve">
+    <value>nativeVersusCustomNotificationsGroupBox</value>
+  </data>
+  <data name="timeout.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="useCustomTrayNotifications.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupCustomNotificationSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="customNotificationsShowTimeoutBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="customNotificationsPlayWindowsNotificationAudio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 69</value>
+  </data>
+  <data name="&gt;&gt;buttonPanel.Name" xml:space="preserve">
+    <value>buttonPanel</value>
+  </data>
+  <data name="groupNativeNotification.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="customNotificationsShowInDarkMode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLanguage.Name" xml:space="preserve">
+    <value>comboBoxLanguage</value>
+  </data>
+  <data name="&gt;&gt;useNativeWindowsNotifications.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nativeNotificationAutoCopy.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="customNotificationsShowInDarkMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 21</value>
+  </data>
+  <data name="useNativeWindowsNotifications.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="customNotificationsShowInDarkMode.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;reconnectAttemptDelayLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nativeNotificationAutoCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;reconnectAttemptDelay.Name" xml:space="preserve">
+    <value>reconnectAttemptDelay</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="&gt;&gt;reconnectAttemptsLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLanguage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;customNotificationsShowTimeoutBar.Name" xml:space="preserve">
+    <value>customNotificationsShowTimeoutBar</value>
+  </data>
+  <data name="useNativeWindowsNotifications.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 17</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupCustomNotificationSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>504, 98</value>
+  </data>
+  <data name="saveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 26</value>
+  </data>
+  <data name="&gt;&gt;groupNativeNotification.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBoxAutoStart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nativeNotificationAutoCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="reconnectAttempts.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;nativeVersusCustomNotificationsGroupBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;reconnectAttempts.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="reconnectAttemptDelayLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 164</value>
+  </data>
+  <data name="customNotificationsPlayWindowsNotificationAudio.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="checkBoxAutoStart.Text" xml:space="preserve">
+    <value>开机自动启动</value>
+  </data>
+  <data name="groupNativeNotification.Size" type="System.Drawing.Size, System.Drawing">
+    <value>504, 51</value>
+  </data>
+  <data name="&gt;&gt;useNativeWindowsNotifications.Name" xml:space="preserve">
+    <value>useNativeWindowsNotifications</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 17</value>
+  </data>
+  <data name="groupCustomNotificationSettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="useNativeWindowsNotifications.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupNativeNotification.Name" xml:space="preserve">
+    <value>groupNativeNotification</value>
+  </data>
+  <data name="&gt;&gt;checkBoxAutoStart.Name" xml:space="preserve">
+    <value>checkBoxAutoStart</value>
+  </data>
+  <data name="&gt;&gt;checkBoxAutoStart.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>自定义托盘通知设置</value>
+  </data>
+  <data name="useCustomTrayNotifications.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 21</value>
+  </data>
+  <data name="customNotificationsPlayWindowsNotificationAudio.Text" xml:space="preserve">
+    <value>播放Windows通知声音</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLanguage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;customNotificationsShowTimeoutBar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;nativeVersusCustomNotificationsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBoxAutoStart.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="buttonPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="comboBoxLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="timeout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>506, 23</value>
+  </data>
+  <data name="nativeVersusCustomNotificationsGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="nativeNotificationAutoCopy.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Name" xml:space="preserve">
+    <value>languageLabel</value>
+  </data>
+  <data name="groupCustomNotificationSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 328</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Name" xml:space="preserve">
+    <value>saveButton</value>
+  </data>
+  <data name="customNotificationsPlayWindowsNotificationAudio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 21</value>
+  </data>
+  <data name="reconnectAttempts.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;reconnectAttemptDelayLabel.Name" xml:space="preserve">
+    <value>reconnectAttemptDelayLabel</value>
+  </data>
+  <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 26</value>
+  </data>
+  <data name="groupNativeNotification.Text" xml:space="preserve">
+    <value>Windows原生通知设置</value>
+  </data>
+  <data name="&gt;&gt;customNotificationsShowInDarkMode.Parent" xml:space="preserve">
+    <value>groupCustomNotificationSettings</value>
+  </data>
+  <data name="timeoutLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 17</value>
+  </data>
+  <data name="reconnectAttemptDelayLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="customNotificationsShowInDarkMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 42</value>
+  </data>
+  <data name="reconnectAttemptsLabel.Text" xml:space="preserve">
+    <value>最大重新连接重试尝试次数（需要重新启动）：</value>
+  </data>
+  <data name="&gt;&gt;buttonPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;timeoutLabel.Name" xml:space="preserve">
+    <value>timeoutLabel</value>
+  </data>
+  <data name="customNotificationsShowInDarkMode.Text" xml:space="preserve">
+    <value>在深色模式下显示通知</value>
+  </data>
+  <data name="&gt;&gt;timeout.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="cancelButton.Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="checkBoxAutoStart.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="comboBoxLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 25</value>
+  </data>
+  <data name="buttonPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>531, 58</value>
+  </data>
+  <data name="timeoutLabel.Text" xml:space="preserve">
+    <value>通知提示超时（秒，使用-1表示需要手动关闭通知）：</value>
+  </data>
+  <data name="&gt;&gt;customNotificationsPlayWindowsNotificationAudio.Parent" xml:space="preserve">
+    <value>groupCustomNotificationSettings</value>
+  </data>
+  <data name="&gt;&gt;groupNativeNotification.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="&gt;&gt;timeoutLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="reconnectAttempts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 135</value>
+  </data>
+  <data name="&gt;&gt;customNotificationsPlayWindowsNotificationAudio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;reconnectAttemptsLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="customNotificationsPlayWindowsNotificationAudio.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="reconnectAttempts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>506, 23</value>
+  </data>
+  <data name="&gt;&gt;useCustomTrayNotifications.Parent" xml:space="preserve">
+    <value>nativeVersusCustomNotificationsGroupBox</value>
+  </data>
+  <data name="languageLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;customNotificationsShowInDarkMode.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="reconnectAttemptDelayLabel.Text" xml:space="preserve">
+    <value>尝试之间的延迟（秒，需要重新启动）：</value>
+  </data>
+  <data name="useCustomTrayNotifications.Text" xml:space="preserve">
+    <value>使用ntfysh-windows自定义托盘通知（不推荐）</value>
+  </data>
+  <data name="groupCustomNotificationSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="groupNativeNotification.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;groupCustomNotificationSettings.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="timeoutLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="languageLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="&gt;&gt;reconnectAttemptDelay.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;buttonPanel.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="checkBoxAutoStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 21</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxAutoStart.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customNotificationsShowInDarkMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;reconnectAttemptsLabel.Name" xml:space="preserve">
+    <value>reconnectAttemptsLabel</value>
+  </data>
+  <data name="&gt;&gt;nativeNotificationAutoCopy.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="timeoutLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="useNativeWindowsNotifications.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 21</value>
+  </data>
+  <data name="&gt;&gt;nativeNotificationAutoCopy.Name" xml:space="preserve">
+    <value>nativeNotificationAutoCopy</value>
+  </data>
+  <data name="timeout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 84</value>
+  </data>
+  <data name="groupNativeNotification.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 432</value>
+  </data>
+  <data name="&gt;&gt;groupCustomNotificationSettings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="reconnectAttemptsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 17</value>
+  </data>
+  <data name="&gt;&gt;reconnectAttempts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBoxAutoStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 488</value>
+  </data>
+  <data name="customNotificationsShowTimeoutBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 21</value>
+  </data>
+  <data name="groupNativeNotification.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="buttonPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;useNativeWindowsNotifications.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="useNativeWindowsNotifications.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="reconnectAttemptDelay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="reconnectAttemptsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 113</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="customNotificationsShowTimeoutBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 16</value>
+  </data>
+  <data name="&gt;&gt;customNotificationsShowInDarkMode.Name" xml:space="preserve">
+    <value>customNotificationsShowInDarkMode</value>
+  </data>
+  <data name="buttonPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="nativeNotificationAutoCopy.Text" xml:space="preserve">
+    <value>自动复制通知内容</value>
+  </data>
+  <data name="nativeVersusCustomNotificationsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>506, 76</value>
+  </data>
+  <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>363, 18</value>
+  </data>
+  <data name="&gt;&gt;nativeVersusCustomNotificationsGroupBox.Name" xml:space="preserve">
+    <value>nativeVersusCustomNotificationsGroupBox</value>
+  </data>
+  <data name="useNativeWindowsNotifications.Text" xml:space="preserve">
+    <value>使用Windows原生通知（推荐）</value>
+  </data>
+  <data name="useCustomTrayNotifications.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;nativeVersusCustomNotificationsGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 309</value>
+  </data>
+  <data name="timeout.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="useCustomTrayNotifications.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 45</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nativeVersusCustomNotificationsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>531, 591</value>
+  </data>
+  <data name="reconnectAttemptDelayLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;reconnectAttemptDelayLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;reconnectAttemptsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="saveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>444, 18</value>
+  </data>
+  <data name="cancelButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="customNotificationsShowTimeoutBar.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="reconnectAttemptsLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;timeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="reconnectAttemptDelay.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;nativeNotificationAutoCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SettingsDialog</value>
+  </data>
+  <data name="&gt;&gt;useCustomTrayNotifications.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;reconnectAttempts.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="nativeNotificationAutoCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 21</value>
+  </data>
+  <data name="&gt;&gt;customNotificationsShowTimeoutBar.Parent" xml:space="preserve">
+    <value>groupCustomNotificationSettings</value>
+  </data>
+  <data name="&gt;&gt;customNotificationsPlayWindowsNotificationAudio.Name" xml:space="preserve">
+    <value>customNotificationsPlayWindowsNotificationAudio</value>
+  </data>
+  <data name="buttonPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 533</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="timeoutLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 62</value>
+  </data>
+  <data name="&gt;&gt;timeout.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;reconnectAttemptDelay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="languageLabel.Text" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="saveButton.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Name" xml:space="preserve">
+    <value>cancelButton</value>
+  </data>
+  <data name="&gt;&gt;useCustomTrayNotifications.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nativeVersusCustomNotificationsGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="nativeVersusCustomNotificationsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 218</value>
+  </data>
+  <data name="&gt;&gt;timeoutLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupNativeNotification.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customNotificationsPlayWindowsNotificationAudio.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;saveButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="reconnectAttemptDelay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>506, 23</value>
+  </data>
+  <data name="comboBoxLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 29</value>
+  </data>
+  <data name="reconnectAttemptDelay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 186</value>
+  </data>
+  <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 17</value>
+  </data>
+  <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Parent" xml:space="preserve">
+    <value>buttonPanel</value>
+  </data>
+  <data name="timeoutLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;reconnectAttemptDelay.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="useCustomTrayNotifications.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="reconnectAttemptDelayLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 17</value>
+  </data>
+  <data name="reconnectAttemptsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;customNotificationsShowTimeoutBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="reconnectAttemptsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="customNotificationsShowTimeoutBar.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>en-US</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
