@@ -53,169 +53,124 @@ namespace ntfysh_client
             // 
             // subscribeNewTopic
             // 
-            subscribeNewTopic.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            subscribeNewTopic.Location = new System.Drawing.Point(332, 402);
-            subscribeNewTopic.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            resources.ApplyResources(subscribeNewTopic, "subscribeNewTopic");
             subscribeNewTopic.Name = "subscribeNewTopic";
-            subscribeNewTopic.Size = new System.Drawing.Size(295, 43);
-            subscribeNewTopic.TabIndex = 2;
-            subscribeNewTopic.Text = "订阅新主题(Topic)";
             subscribeNewTopic.UseVisualStyleBackColor = true;
             subscribeNewTopic.Click += subscribeNewTopic_Click;
             // 
             // removeSelectedTopics
             // 
-            removeSelectedTopics.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            removeSelectedTopics.Enabled = false;
-            removeSelectedTopics.Location = new System.Drawing.Point(20, 402);
-            removeSelectedTopics.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            resources.ApplyResources(removeSelectedTopics, "removeSelectedTopics");
             removeSelectedTopics.Name = "removeSelectedTopics";
-            removeSelectedTopics.Size = new System.Drawing.Size(295, 43);
-            removeSelectedTopics.TabIndex = 0;
-            removeSelectedTopics.Text = "移除选择的主题";
             removeSelectedTopics.UseVisualStyleBackColor = true;
             removeSelectedTopics.Click += removeSelectedTopics_Click;
             // 
             // 无订阅的主题
             // 
-            无订阅的主题.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            resources.ApplyResources(无订阅的主题, "无订阅的主题");
             无订阅的主题.FormattingEnabled = true;
-            无订阅的主题.ItemHeight = 24;
-            无订阅的主题.Location = new System.Drawing.Point(20, 74);
-            无订阅的主题.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             无订阅的主题.Name = "无订阅的主题";
             无订阅的主题.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            无订阅的主题.Size = new System.Drawing.Size(604, 316);
-            无订阅的主题.TabIndex = 3;
             无订阅的主题.Click += notificationTopics_Click;
             无订阅的主题.SelectedIndexChanged += notificationTopics_SelectedIndexChanged;
             无订阅的主题.SelectedValueChanged += notificationTopics_SelectedValueChanged;
             // 
             // notifyIcon
             // 
+            resources.ApplyResources(notifyIcon, "notifyIcon");
             notifyIcon.ContextMenuStrip = trayContextMenu;
-            notifyIcon.Icon = (System.Drawing.Icon)resources.GetObject("notifyIcon.Icon");
-            notifyIcon.Text = "ntfy.sh";
-            notifyIcon.Visible = true;
             notifyIcon.Click += notifyIcon_Click;
             // 
             // trayContextMenu
             // 
+            resources.ApplyResources(trayContextMenu, "trayContextMenu");
             trayContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
             trayContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { showControlWindowToolStripMenuItem, exitToolStripMenuItem });
             trayContextMenu.Name = "trayContextMenu";
-            trayContextMenu.Size = new System.Drawing.Size(273, 68);
             // 
             // showControlWindowToolStripMenuItem
             // 
-            showControlWindowToolStripMenuItem.Image = (System.Drawing.Image)resources.GetObject("showControlWindowToolStripMenuItem.Image");
+            resources.ApplyResources(showControlWindowToolStripMenuItem, "showControlWindowToolStripMenuItem");
             showControlWindowToolStripMenuItem.Name = "showControlWindowToolStripMenuItem";
-            showControlWindowToolStripMenuItem.Size = new System.Drawing.Size(272, 32);
-            showControlWindowToolStripMenuItem.Text = "Show control window";
             showControlWindowToolStripMenuItem.Click += showControlWindowToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
-            exitToolStripMenuItem.Image = (System.Drawing.Image)resources.GetObject("exitToolStripMenuItem.Image");
+            resources.ApplyResources(exitToolStripMenuItem, "exitToolStripMenuItem");
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new System.Drawing.Size(272, 32);
-            exitToolStripMenuItem.Text = "Exit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
             // menuStrip1
             // 
+            resources.ApplyResources(menuStrip1, "menuStrip1");
             menuStrip1.BackColor = System.Drawing.Color.White;
             menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { fileToolStripMenuItem, helpToolStripMenuItem });
-            menuStrip1.Location = new System.Drawing.Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new System.Windows.Forms.Padding(11, 3, 0, 3);
-            menuStrip1.Size = new System.Drawing.Size(647, 34);
-            menuStrip1.TabIndex = 4;
-            menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
+            resources.ApplyResources(fileToolStripMenuItem, "fileToolStripMenuItem");
             fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { exitToolStripMenuItem1, settingsToolStripMenuItem });
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            fileToolStripMenuItem.Size = new System.Drawing.Size(62, 28);
-            fileToolStripMenuItem.Text = "系统";
+            fileToolStripMenuItem.Click += fileToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem1
             // 
-            exitToolStripMenuItem1.Image = (System.Drawing.Image)resources.GetObject("exitToolStripMenuItem1.Image");
+            resources.ApplyResources(exitToolStripMenuItem1, "exitToolStripMenuItem1");
             exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            exitToolStripMenuItem1.Size = new System.Drawing.Size(146, 34);
-            exitToolStripMenuItem1.Text = "退出";
             exitToolStripMenuItem1.Click += exitToolStripMenuItem1_Click;
             // 
             // settingsToolStripMenuItem
             // 
-            settingsToolStripMenuItem.Image = (System.Drawing.Image)resources.GetObject("settingsToolStripMenuItem.Image");
+            resources.ApplyResources(settingsToolStripMenuItem, "settingsToolStripMenuItem");
             settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            settingsToolStripMenuItem.Size = new System.Drawing.Size(146, 34);
-            settingsToolStripMenuItem.Text = "设置";
             settingsToolStripMenuItem.Click += settingsToolStripMenuItem_Click;
             // 
             // helpToolStripMenuItem
             // 
+            resources.ApplyResources(helpToolStripMenuItem, "helpToolStripMenuItem");
             helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { ntfyshWebsiteToolStripMenuItem, toolStripMenuItem1, aboutToolStripMenuItem });
             helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            helpToolStripMenuItem.Size = new System.Drawing.Size(62, 28);
-            helpToolStripMenuItem.Text = "帮助";
             // 
             // ntfyshWebsiteToolStripMenuItem
             // 
-            ntfyshWebsiteToolStripMenuItem.Image = (System.Drawing.Image)resources.GetObject("ntfyshWebsiteToolStripMenuItem.Image");
+            resources.ApplyResources(ntfyshWebsiteToolStripMenuItem, "ntfyshWebsiteToolStripMenuItem");
             ntfyshWebsiteToolStripMenuItem.Name = "ntfyshWebsiteToolStripMenuItem";
-            ntfyshWebsiteToolStripMenuItem.Size = new System.Drawing.Size(239, 34);
-            ntfyshWebsiteToolStripMenuItem.Text = "打开网页ntfy.sh";
             ntfyshWebsiteToolStripMenuItem.Click += ntfyshWebsiteToolStripMenuItem_Click;
             // 
             // toolStripMenuItem1
             // 
+            resources.ApplyResources(toolStripMenuItem1, "toolStripMenuItem1");
             toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new System.Drawing.Size(236, 6);
             // 
             // aboutToolStripMenuItem
             // 
-            aboutToolStripMenuItem.Image = (System.Drawing.Image)resources.GetObject("aboutToolStripMenuItem.Image");
+            resources.ApplyResources(aboutToolStripMenuItem, "aboutToolStripMenuItem");
             aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            aboutToolStripMenuItem.Size = new System.Drawing.Size(239, 34);
-            aboutToolStripMenuItem.Text = "关于";
             aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(20, 43);
-            label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(154, 24);
-            label1.TabIndex = 1;
-            label1.Text = "已订阅通知主题：";
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
-            ClientSize = new System.Drawing.Size(647, 461);
             Controls.Add(menuStrip1);
             Controls.Add(无订阅的主题);
             Controls.Add(removeSelectedTopics);
             Controls.Add(subscribeNewTopic);
             Controls.Add(label1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
             MainMenuStrip = menuStrip1;
-            Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "MainForm";
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "ntfy pusher";
             FormClosing += MainForm_FormClosing;
             FormClosed += MainForm_FormClosed;
             Load += MainForm_Load;

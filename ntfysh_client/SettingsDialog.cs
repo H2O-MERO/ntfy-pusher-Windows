@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using static ntfysh_client.SettingsModel;
 
@@ -7,7 +8,11 @@ namespace ntfysh_client
     public partial class SettingsDialog : Form
     {
         public NotificationsType NotificationsMethod { get; set; }
-
+        public string Language
+        {
+            get => (string)comboBoxLanguage.SelectedValue;
+            set => comboBoxLanguage.SelectedValue = value;
+        }
         public decimal Timeout
         {
             get => timeout.Value;
@@ -88,8 +93,20 @@ namespace ntfysh_client
         {
             InitializeComponent();
             SetNotificationsUiElements();
+            InitializeLanguageComboBox();
         }
-
+        private void InitializeLanguageComboBox()
+        {
+            comboBoxLanguage.DisplayMember = "Key";
+            comboBoxLanguage.ValueMember = "Value";
+            comboBoxLanguage.DataSource = new List<KeyValuePair<string, string>>
+        {
+            new KeyValuePair<string, string>("中文", "zh-CN"),
+            new KeyValuePair<string, string>("English", "en-US")
+            // 可继续添加其他语言
+        };
+            comboBoxLanguage.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
         private void saveButton_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;
@@ -140,6 +157,21 @@ namespace ntfysh_client
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

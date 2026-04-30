@@ -51,6 +51,8 @@ namespace ntfysh_client
             groupNativeNotification = new System.Windows.Forms.GroupBox();
             nativeNotificationAutoCopy = new System.Windows.Forms.CheckBox();
             checkBoxAutoStart = new System.Windows.Forms.CheckBox();
+            comboBoxLanguage = new System.Windows.Forms.ComboBox();
+            languageLabel = new System.Windows.Forms.Label();
             buttonPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)timeout).BeginInit();
             ((System.ComponentModel.ISupportInitialize)reconnectAttempts).BeginInit();
@@ -66,8 +68,8 @@ namespace ntfysh_client
             buttonPanel.Controls.Add(cancelButton);
             buttonPanel.Controls.Add(saveButton);
             buttonPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            buttonPanel.Location = new System.Drawing.Point(0, 467);
-            buttonPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            buttonPanel.Location = new System.Drawing.Point(0, 533);
+            buttonPanel.Margin = new System.Windows.Forms.Padding(4);
             buttonPanel.Name = "buttonPanel";
             buttonPanel.Size = new System.Drawing.Size(531, 58);
             buttonPanel.TabIndex = 0;
@@ -97,7 +99,7 @@ namespace ntfysh_client
             // timeoutLabel
             // 
             timeoutLabel.AutoSize = true;
-            timeoutLabel.Location = new System.Drawing.Point(13, 10);
+            timeoutLabel.Location = new System.Drawing.Point(12, 62);
             timeoutLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             timeoutLabel.Name = "timeoutLabel";
             timeoutLabel.Size = new System.Drawing.Size(296, 17);
@@ -107,7 +109,7 @@ namespace ntfysh_client
             // 
             // timeout
             // 
-            timeout.Location = new System.Drawing.Point(13, 32);
+            timeout.Location = new System.Drawing.Point(12, 84);
             timeout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             timeout.Maximum = new decimal(new int[] { -1981284353, -1966660860, 0, 0 });
             timeout.Name = "timeout";
@@ -116,7 +118,7 @@ namespace ntfysh_client
             // 
             // reconnectAttempts
             // 
-            reconnectAttempts.Location = new System.Drawing.Point(12, 83);
+            reconnectAttempts.Location = new System.Drawing.Point(11, 135);
             reconnectAttempts.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             reconnectAttempts.Maximum = new decimal(new int[] { -1981284353, -1966660860, 0, 0 });
             reconnectAttempts.Name = "reconnectAttempts";
@@ -126,7 +128,7 @@ namespace ntfysh_client
             // reconnectAttemptsLabel
             // 
             reconnectAttemptsLabel.AutoSize = true;
-            reconnectAttemptsLabel.Location = new System.Drawing.Point(12, 61);
+            reconnectAttemptsLabel.Location = new System.Drawing.Point(11, 113);
             reconnectAttemptsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             reconnectAttemptsLabel.Name = "reconnectAttemptsLabel";
             reconnectAttemptsLabel.Size = new System.Drawing.Size(260, 17);
@@ -135,7 +137,7 @@ namespace ntfysh_client
             // 
             // reconnectAttemptDelay
             // 
-            reconnectAttemptDelay.Location = new System.Drawing.Point(12, 134);
+            reconnectAttemptDelay.Location = new System.Drawing.Point(11, 186);
             reconnectAttemptDelay.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             reconnectAttemptDelay.Maximum = new decimal(new int[] { -1981284353, -1966660860, 0, 0 });
             reconnectAttemptDelay.Name = "reconnectAttemptDelay";
@@ -145,7 +147,7 @@ namespace ntfysh_client
             // reconnectAttemptDelayLabel
             // 
             reconnectAttemptDelayLabel.AutoSize = true;
-            reconnectAttemptDelayLabel.Location = new System.Drawing.Point(12, 112);
+            reconnectAttemptDelayLabel.Location = new System.Drawing.Point(11, 164);
             reconnectAttemptDelayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             reconnectAttemptDelayLabel.Name = "reconnectAttemptDelayLabel";
             reconnectAttemptDelayLabel.Size = new System.Drawing.Size(224, 17);
@@ -156,7 +158,7 @@ namespace ntfysh_client
             // 
             nativeVersusCustomNotificationsGroupBox.Controls.Add(useCustomTrayNotifications);
             nativeVersusCustomNotificationsGroupBox.Controls.Add(useNativeWindowsNotifications);
-            nativeVersusCustomNotificationsGroupBox.Location = new System.Drawing.Point(12, 166);
+            nativeVersusCustomNotificationsGroupBox.Location = new System.Drawing.Point(11, 218);
             nativeVersusCustomNotificationsGroupBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             nativeVersusCustomNotificationsGroupBox.Name = "nativeVersusCustomNotificationsGroupBox";
             nativeVersusCustomNotificationsGroupBox.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -194,7 +196,7 @@ namespace ntfysh_client
             groupCustomNotificationSettings.Controls.Add(customNotificationsPlayWindowsNotificationAudio);
             groupCustomNotificationSettings.Controls.Add(customNotificationsShowInDarkMode);
             groupCustomNotificationSettings.Controls.Add(customNotificationsShowTimeoutBar);
-            groupCustomNotificationSettings.Location = new System.Drawing.Point(12, 276);
+            groupCustomNotificationSettings.Location = new System.Drawing.Point(11, 328);
             groupCustomNotificationSettings.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             groupCustomNotificationSettings.Name = "groupCustomNotificationSettings";
             groupCustomNotificationSettings.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -239,7 +241,7 @@ namespace ntfysh_client
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(12, 257);
+            label1.Location = new System.Drawing.Point(11, 309);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(116, 17);
             label1.TabIndex = 11;
@@ -248,10 +250,10 @@ namespace ntfysh_client
             // groupNativeNotification
             // 
             groupNativeNotification.Controls.Add(nativeNotificationAutoCopy);
-            groupNativeNotification.Location = new System.Drawing.Point(12, 380);
-            groupNativeNotification.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            groupNativeNotification.Location = new System.Drawing.Point(11, 432);
+            groupNativeNotification.Margin = new System.Windows.Forms.Padding(2);
             groupNativeNotification.Name = "groupNativeNotification";
-            groupNativeNotification.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            groupNativeNotification.Padding = new System.Windows.Forms.Padding(2);
             groupNativeNotification.Size = new System.Drawing.Size(504, 51);
             groupNativeNotification.TabIndex = 3;
             groupNativeNotification.TabStop = false;
@@ -262,7 +264,7 @@ namespace ntfysh_client
             // 
             nativeNotificationAutoCopy.AutoSize = true;
             nativeNotificationAutoCopy.Location = new System.Drawing.Point(6, 21);
-            nativeNotificationAutoCopy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            nativeNotificationAutoCopy.Margin = new System.Windows.Forms.Padding(2);
             nativeNotificationAutoCopy.Name = "nativeNotificationAutoCopy";
             nativeNotificationAutoCopy.Size = new System.Drawing.Size(123, 21);
             nativeNotificationAutoCopy.TabIndex = 0;
@@ -272,7 +274,7 @@ namespace ntfysh_client
             // checkBoxAutoStart
             // 
             checkBoxAutoStart.AutoSize = true;
-            checkBoxAutoStart.Location = new System.Drawing.Point(18, 436);
+            checkBoxAutoStart.Location = new System.Drawing.Point(17, 488);
             checkBoxAutoStart.Name = "checkBoxAutoStart";
             checkBoxAutoStart.Size = new System.Drawing.Size(99, 21);
             checkBoxAutoStart.TabIndex = 12;
@@ -280,12 +282,32 @@ namespace ntfysh_client
             checkBoxAutoStart.UseVisualStyleBackColor = true;
             checkBoxAutoStart.CheckedChanged += checkBox1_CheckedChanged;
             // 
+            // comboBoxLanguage
+            // 
+            comboBoxLanguage.Location = new System.Drawing.Point(12, 29);
+            comboBoxLanguage.Name = "comboBoxLanguage";
+            comboBoxLanguage.Size = new System.Drawing.Size(121, 25);
+            comboBoxLanguage.TabIndex = 0;
+            comboBoxLanguage.SelectedIndexChanged += languageComboBox_SelectedIndexChanged;
+            // 
+            // languageLabel
+            // 
+            languageLabel.AutoSize = true;
+            languageLabel.Location = new System.Drawing.Point(12, 9);
+            languageLabel.Name = "languageLabel";
+            languageLabel.Size = new System.Drawing.Size(32, 17);
+            languageLabel.TabIndex = 14;
+            languageLabel.Text = "语言";
+            languageLabel.Click += label3_Click;
+            // 
             // SettingsDialog
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
-            ClientSize = new System.Drawing.Size(531, 525);
+            ClientSize = new System.Drawing.Size(531, 591);
+            Controls.Add(languageLabel);
+            Controls.Add(comboBoxLanguage);
             Controls.Add(checkBoxAutoStart);
             Controls.Add(groupNativeNotification);
             Controls.Add(label1);
@@ -299,7 +321,7 @@ namespace ntfysh_client
             Controls.Add(timeoutLabel);
             Controls.Add(buttonPanel);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            Margin = new System.Windows.Forms.Padding(4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SettingsDialog";
@@ -347,5 +369,7 @@ namespace ntfysh_client
         private System.Windows.Forms.GroupBox groupNativeNotification;
         private System.Windows.Forms.CheckBox nativeNotificationAutoCopy;
         private System.Windows.Forms.CheckBox checkBoxAutoStart;
+        private System.Windows.Forms.ComboBox comboBoxLanguage; 
+        private System.Windows.Forms.Label languageLabel;
     }
 }

@@ -233,5 +233,10 @@ namespace ntfysh_client
         {
 
         }
+
+        private void username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

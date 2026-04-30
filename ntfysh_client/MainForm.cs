@@ -11,6 +11,8 @@ using System.Linq;
 using System.Reflection;
 using System.Threading;
 using System.Windows.Forms;
+using System.Resources;
+using System.Globalization;
 
 namespace ntfysh_client
 {
@@ -72,7 +74,6 @@ namespace ntfysh_client
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            LoadSettings();
             LoadTopics();
 
             _notificationDialog = new NotificationDialog();
@@ -280,6 +281,7 @@ namespace ntfysh_client
             dialog.Timeout = Program.Settings.Timeout; // set timeout last so bounds are setup before setting value
             dialog.NativeNotificationsAutoCopyToClipboard = Program.Settings.NativeNotificationsAutoCopyToClipboard;
             dialog.AutoStartEnabled = Program.Settings.AutoStartEnabled;
+            dialog.Language = Program.Settings.Language;
 
 
             //Show dialog
@@ -298,13 +300,18 @@ namespace ntfysh_client
             Program.Settings.CustomTrayNotificationsPlayDefaultWindowsSound = dialog.CustomTrayNotificationsPlayDefaultWindowsSound;
             Program.Settings.NativeNotificationsAutoCopyToClipboard = dialog.NativeNotificationsAutoCopyToClipboard;
             Program.Settings.AutoStartEnabled = dialog.AutoStartEnabled;
+            Program.Settings.Language = dialog.Language;
 
-            UpdateAutoStart();  // 根据当前设置更新自启动状态
-            SaveSettingsToFile();
+            UpdateAutoStart();
+            SettingsManager.SaveSettings(Program.Settings);
 
-            //Save new settings persistently
-            SaveSettingsToFile();
+            string currentCulture = Thread.CurrentThread.CurrentUICulture.Name;
+            if (!string.Equals(currentCulture, dialog.Language, StringComparison.OrdinalIgnoreCase))
+            {
+                MessageBox.Show("语言更改将在程序重启后生效。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
+        
 
         private void notificationTopics_SelectedValueChanged(object sender, EventArgs e)
         {
@@ -354,18 +361,6 @@ namespace ntfysh_client
             File.WriteAllText(GetTopicsFilePath(), topicsSerialised);
         }
 
-        private string GetSettingsFilePath()
-        {
-            string binaryDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) ?? throw new InvalidOperationException("Unable to determine path for application");
-            return Path.Combine(binaryDirectory ?? throw new InvalidOperationException("Unable to determine path for settings file"), "settings.json");
-        }
-
-        private void SaveSettingsToFile()
-        {
-            string settingsSerialised = JsonConvert.SerializeObject(Program.Settings, Formatting.Indented);
-
-            File.WriteAllText(GetSettingsFilePath(), settingsSerialised);
-        }
 
         private void LoadTopics()
         {
@@ -451,101 +446,6 @@ namespace ntfysh_client
             }
         }
 
-        private SettingsModel GetDefaultSettings() => new()
-        {
-            Revision = 3,      // 更新版本号
-            Timeout = 5,
-            ReconnectAttempts = 10,
-            ReconnectAttemptDelay = 3,
-            NotificationsMethod = SettingsModel.NotificationsType.NativeWindows,
-            CustomTrayNotificationsShowTimeoutBar = true,
-            CustomTrayNotificationsShowInDarkMode = false,
-            CustomTrayNotificationsPlayDefaultWindowsSound = true,
-            NativeNotificationsAutoCopyToClipboard = false,   
-            AutoStartEnabled = false                       
-        };
-
-        private void MergeSettingsRevisions(SettingsModel older, SettingsModel newer)
-        {
-            //Apply settings introduced in Revision 1
-            if (older.Revision < 1)
-            {
-                older.ReconnectAttempts = newer.ReconnectAttempts;
-                older.ReconnectAttemptDelay = newer.ReconnectAttemptDelay;
-            }
-
-            //Apply settings introduced in Revision 2 (Native vs custom notifications)
-            if (older.Revision < 2)
-            {
-                older.NotificationsMethod = newer.NotificationsMethod;
-                older.CustomTrayNotificationsShowTimeoutBar = newer.CustomTrayNotificationsShowTimeoutBar;
-                older.CustomTrayNotificationsShowInDarkMode = newer.CustomTrayNotificationsShowInDarkMode;
-                older.CustomTrayNotificationsPlayDefaultWindowsSound = newer.CustomTrayNotificationsPlayDefaultWindowsSound;
-            }
-
-            if (older.Revision < 3)
-            {
-                older.NativeNotificationsAutoCopyToClipboard = newer.NativeNotificationsAutoCopyToClipboard;
-                older.AutoStartEnabled = newer.AutoStartEnabled;
-            }
-            older.Revision = newer.Revision;
-
-            //Update the revision
-            older.Revision = newer.Revision;
-        }
-
-        private void LoadSettings()
-        {
-            string settingsFilePath = GetSettingsFilePath();
-            SettingsModel defaultSettings = GetDefaultSettings();
-
-            //Check if we have any settings file on disk to load. If we don't, initialise defaults
-            if (!File.Exists(settingsFilePath))
-            {
-                Program.Settings = defaultSettings;
-
-                SaveSettingsToFile();
-
-                return;
-            }
-
-            //We have a settings file. Load it!
-            string settingsSerialised = File.ReadAllText(settingsFilePath);
-
-            //Check if the file is empty. If it is, initialise default settings
-            if (string.IsNullOrWhiteSpace(settingsSerialised))
-            {
-                Program.Settings = defaultSettings;
-
-                SaveSettingsToFile();
-
-                return;
-            }
-
-            //Deserialise the settings
-            SettingsModel? settings = JsonConvert.DeserializeObject<SettingsModel?>(settingsSerialised);
-
-            //Check if the deserialise succeeded. If it didn't, initialise default settings
-            if (settings is null)
-            {
-                Program.Settings = defaultSettings;
-
-                SaveSettingsToFile();
-
-                return;
-            }
-
-            Program.Settings = settings;
-
-            //Check the settings revision. If it is older than the current latest revision, apply the settings defaults missing from previous revision
-            if (Program.Settings.Revision < defaultSettings.Revision)
-            {
-                MergeSettingsRevisions(Program.Settings, defaultSettings);
-                SaveSettingsToFile();
-            }
-
-            UpdateAutoStart();
-        }
 
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -588,6 +488,41 @@ namespace ntfysh_client
         private void notificationTopics_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+
+    public static class LocalizationHelper
+    {
+        public static void ApplyLanguage(string cultureName)
+        {
+            try
+            {
+                var culture = new CultureInfo(cultureName);
+                Thread.CurrentThread.CurrentUICulture = culture;
+                Thread.CurrentThread.CurrentCulture = culture;
+            }
+            catch (CultureNotFoundException)
+            {
+                Thread.CurrentThread.CurrentUICulture = CultureInfo.InvariantCulture;
+            }
+        }
+        private static ResourceManager _globalResMgr =
+            new ResourceManager("ntfysh_client.Properties.Resources", Assembly.GetExecutingAssembly());
+        public static string GetGlobalString(string key)
+        {
+            try
+            {
+                return _globalResMgr.GetString(key);
+            }
+            catch
+            {
+                return $"[{key}]";
+            }
         }
     }
 }

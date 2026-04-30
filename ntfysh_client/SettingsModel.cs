@@ -18,5 +18,6 @@
         public bool CustomTrayNotificationsPlayDefaultWindowsSound { get; set; }
         public bool NativeNotificationsAutoCopyToClipboard { get; set; }
         public bool AutoStartEnabled { get; set; }
+        public string Language { get; set; } = "zh-CN"; // 默认中文
     }
 }
