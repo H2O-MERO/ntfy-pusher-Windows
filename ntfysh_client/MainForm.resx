@@ -881,4 +881,10 @@
   <data name="copyTopicFullAddressToolStripMenuItem.Text" xml:space="preserve">
     <value>复制完整地址</value>
   </data>
+  <data name="checkForUpdatesToolStripMenuItem.Text" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="checkForUpdatesTrayToolStripMenuItem.Text" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
 </root>

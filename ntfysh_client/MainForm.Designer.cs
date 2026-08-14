@@ -37,6 +37,7 @@ namespace ntfysh_client
             notifyIcon = new System.Windows.Forms.NotifyIcon(components);
             trayContextMenu = new System.Windows.Forms.ContextMenuStrip(components);
             showControlWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            checkForUpdatesTrayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             topicsContextMenu = new System.Windows.Forms.ContextMenuStrip(components);
             copyTopicNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +50,7 @@ namespace ntfysh_client
             ntfyshWebsiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             label1 = new System.Windows.Forms.Label();
             trayContextMenu.SuspendLayout();
             topicsContextMenu.SuspendLayout();
@@ -91,7 +93,7 @@ namespace ntfysh_client
             // 
             resources.ApplyResources(trayContextMenu, "trayContextMenu");
             trayContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            trayContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { showControlWindowToolStripMenuItem, exitToolStripMenuItem });
+            trayContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { showControlWindowToolStripMenuItem, checkForUpdatesTrayToolStripMenuItem, exitToolStripMenuItem });
             trayContextMenu.Name = "trayContextMenu";
             // 
             // showControlWindowToolStripMenuItem
@@ -99,6 +101,12 @@ namespace ntfysh_client
             resources.ApplyResources(showControlWindowToolStripMenuItem, "showControlWindowToolStripMenuItem");
             showControlWindowToolStripMenuItem.Name = "showControlWindowToolStripMenuItem";
             showControlWindowToolStripMenuItem.Click += showControlWindowToolStripMenuItem_Click;
+            // 
+            // checkForUpdatesTrayToolStripMenuItem
+            // 
+            resources.ApplyResources(checkForUpdatesTrayToolStripMenuItem, "checkForUpdatesTrayToolStripMenuItem");
+            checkForUpdatesTrayToolStripMenuItem.Name = "checkForUpdatesTrayToolStripMenuItem";
+            checkForUpdatesTrayToolStripMenuItem.Click += checkForUpdatesToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
@@ -156,8 +164,14 @@ namespace ntfysh_client
             // helpToolStripMenuItem
             // 
             resources.ApplyResources(helpToolStripMenuItem, "helpToolStripMenuItem");
-            helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { ntfyshWebsiteToolStripMenuItem, toolStripMenuItem1, aboutToolStripMenuItem });
+            helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { checkForUpdatesToolStripMenuItem, ntfyshWebsiteToolStripMenuItem, toolStripMenuItem1, aboutToolStripMenuItem });
             helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            // 
+            // checkForUpdatesToolStripMenuItem
+            // 
+            resources.ApplyResources(checkForUpdatesToolStripMenuItem, "checkForUpdatesToolStripMenuItem");
+            checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
+            checkForUpdatesToolStripMenuItem.Click += checkForUpdatesToolStripMenuItem_Click;
             // 
             // ntfyshWebsiteToolStripMenuItem
             // 
@@ -230,6 +244,8 @@ namespace ntfysh_client
         private System.Windows.Forms.ToolStripMenuItem ntfyshWebsiteToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem checkForUpdatesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem checkForUpdatesTrayToolStripMenuItem;
     }
 }
 

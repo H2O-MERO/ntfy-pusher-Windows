@@ -587,4 +587,10 @@
   <data name="copyTopicFullAddressToolStripMenuItem.Text" xml:space="preserve">
     <value>Copy full address</value>
   </data>
+  <data name="checkForUpdatesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Check for Updates</value>
+  </data>
+  <data name="checkForUpdatesTrayToolStripMenuItem.Text" xml:space="preserve">
+    <value>Check for Updates</value>
+  </data>
 </root>

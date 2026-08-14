@@ -1,0 +1,38 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build and publish release
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 6
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "6.0.x"
+
+      - name: Publish (win-x64, framework-dependent)
+        shell: pwsh
+        run: |
+          $version = "${{ github.ref_name }}".TrimStart('v')
+          dotnet publish ntfysh_client/ntfysh_client.csproj -c Release -r win-x64 --self-contained false -p:Version=$version -o publish/win-x64
+
+      - name: Create zip
+        shell: pwsh
+        run: Compress-Archive -Path "publish/win-x64/*" -DestinationPath "ntfy-pusher-windows-x64.zip"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ntfy-pusher-windows-x64.zip
+          generate_release_notes: true

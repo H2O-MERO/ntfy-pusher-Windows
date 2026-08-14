@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<!-- 
 		Microsoft ResX Schema
@@ -98,4 +98,37 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+  <data name="UpdateDialog.Title" xml:space="preserve">
+    <value>Downloading Update</value>
+  </data>
+  <data name="UpdateDialog.StatusDownloading" xml:space="preserve">
+    <value>Downloading new version…</value>
+  </data>
+  <data name="UpdateDialog.Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="UpdateChecker.NoReleaseYet" xml:space="preserve">
+    <value>No release has been published for this repository yet. Auto-update becomes available after the first release.</value>
+  </data>
+  <data name="UpdateChecker.BadResponse" xml:space="preserve">
+    <value>Could not parse the response from GitHub.</value>
+  </data>
+  <data name="UpdateChecker.CheckFailed" xml:space="preserve">
+    <value>Failed to check for updates: {0}</value>
+  </data>
+  <data name="UpdateChecker.UpToDate" xml:space="preserve">
+    <value>You are up to date: v{0}</value>
+  </data>
+  <data name="UpdateChecker.NewVersionAvailable" xml:space="preserve">
+    <value>New version v{0} available (current v{1})&#10;&#10;{2}</value>
+  </data>
+  <data name="UpdateChecker.NoDownloadAsset" xml:space="preserve">
+    <value>New version v{0} is available, but the release has no downloadable update package (zip/exe). Please download it manually from GitHub Releases.</value>
+  </data>
+  <data name="UpdateChecker.DownloadFailed" xml:space="preserve">
+    <value>Failed to download the update: {0}</value>
+  </data>
+  <data name="UpdateChecker.ReadyToApply" xml:space="preserve">
+    <value>The new version has been downloaded. The app will now close, update itself and restart automatically.</value>
+  </data>
 </root>

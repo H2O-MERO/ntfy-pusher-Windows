@@ -11,6 +11,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Resources;
 using System.Globalization;
@@ -23,6 +24,7 @@ namespace ntfysh_client
         private bool _startInTray;
         private bool _trueExit;
         private NotificationDialog _notificationDialog;
+        private bool _updateCheckInProgress;
 
         private readonly Dictionary<string, string> _toastMessages = new Dictionary<string, string>();
 
@@ -78,6 +80,9 @@ namespace ntfysh_client
             LoadTopics();
 
             _notificationDialog = new NotificationDialog();
+
+            // 启动后后台静默检查一次更新（仅在发现新版本时提示）
+            _ = CheckForUpdatesAsync(false);
         }
 
         protected override void SetVisibleCore(bool value)
@@ -523,6 +528,112 @@ namespace ntfysh_client
         {
             using AboutBox d = new AboutBox();
             d.ShowDialog();
+        }
+
+        private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _ = CheckForUpdatesAsync(true);
+        }
+
+        /// <summary>
+        /// 检查更新。interactive=false 时静默运行（启动检查），只在发现新版本时提示；
+        /// interactive=true 时（手动点击）任何结果都会反馈给用户。
+        /// </summary>
+        private async Task CheckForUpdatesAsync(bool interactive)
+        {
+            if (_updateCheckInProgress) return; // 防止重复触发
+            _updateCheckInProgress = true;
+
+            try
+            {
+                Updater.UpdateCheckResult result = await Updater.UpdateChecker.CheckForUpdatesAsync();
+
+                if (!result.CheckSucceeded)
+                {
+                    if (interactive)
+                    {
+                        MessageBox.Show(this,
+                            string.Format(LocalizationHelper.GetGlobalString("UpdateChecker.CheckFailed"), result.ErrorMessage),
+                            "ntfy pusher", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    return;
+                }
+
+                if (!result.UpdateAvailable)
+                {
+                    if (interactive)
+                    {
+                        MessageBox.Show(this,
+                            string.Format(LocalizationHelper.GetGlobalString("UpdateChecker.UpToDate"), result.CurrentVersion),
+                            "ntfy pusher", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    return;
+                }
+
+                // 发现新版本，但发布里没有可下载的更新包
+                if (string.IsNullOrEmpty(result.AssetDownloadUrl))
+                {
+                    if (interactive)
+                    {
+                        MessageBox.Show(this,
+                            string.Format(LocalizationHelper.GetGlobalString("UpdateChecker.NoDownloadAsset"), result.LatestVersion),
+                            "ntfy pusher", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    return;
+                }
+
+                string notes = result.ReleaseNotes ?? "";
+                if (notes.Length > 2000) notes = notes.Substring(0, 2000) + "\n…";
+
+                DialogResult answer = MessageBox.Show(this,
+                    string.Format(LocalizationHelper.GetGlobalString("UpdateChecker.NewVersionAvailable"),
+                        result.LatestVersion, result.CurrentVersion, notes),
+                    "ntfy pusher", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (answer != DialogResult.Yes) return;
+
+                await DownloadAndApplyUpdateAsync(result);
+            }
+            finally
+            {
+                _updateCheckInProgress = false;
+            }
+        }
+
+        private async Task DownloadAndApplyUpdateAsync(Updater.UpdateCheckResult result)
+        {
+            using var dialog = new Updater.UpdateDownloadDialog();
+            dialog.Show(this);
+            Enabled = false;
+
+            try
+            {
+                bool downloaded = await dialog.RunDownloadAsync((progress, token) =>
+                    Updater.UpdaterService.DownloadAndExtractAsync(
+                        result.AssetDownloadUrl!, result.AssetSizeBytes, progress, token));
+
+                if (!downloaded) return; // 用户取消
+
+                MessageBox.Show(this,
+                    LocalizationHelper.GetGlobalString("UpdateChecker.ReadyToApply"),
+                    "ntfy pusher", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // 启动替换脚本，脚本会在本程序退出后覆盖文件并重启
+                Updater.UpdaterService.ApplyUpdateAndExit(dialog.NewFilesDirectory!);
+
+                _trueExit = true;
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this,
+                    string.Format(LocalizationHelper.GetGlobalString("UpdateChecker.DownloadFailed"), ex.Message),
+                    "ntfy pusher", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                dialog.Close();
+                Enabled = true;
+            }
         }
 
         private void exitToolStripMenuItem1_Click(object sender, EventArgs e)

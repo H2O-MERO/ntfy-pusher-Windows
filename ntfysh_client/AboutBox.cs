@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 
 namespace ntfysh_client
@@ -17,7 +17,7 @@ namespace ntfysh_client
 
         private void AboutBox_Load(object sender, EventArgs e)
         {
-
+            label2.Text = $"{label2.Text}  v{Updater.UpdateChecker.GetCurrentVersion()}";
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
