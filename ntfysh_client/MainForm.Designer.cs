@@ -1,4 +1,4 @@
-﻿
+
 namespace ntfysh_client
 {
     partial class MainForm
@@ -38,6 +38,9 @@ namespace ntfysh_client
             trayContextMenu = new System.Windows.Forms.ContextMenuStrip(components);
             showControlWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            topicsContextMenu = new System.Windows.Forms.ContextMenuStrip(components);
+            copyTopicNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            copyTopicFullAddressToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             menuStrip1 = new System.Windows.Forms.MenuStrip();
             fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,6 +51,7 @@ namespace ntfysh_client
             aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             label1 = new System.Windows.Forms.Label();
             trayContextMenu.SuspendLayout();
+            topicsContextMenu.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -73,6 +77,8 @@ namespace ntfysh_client
             无订阅的主题.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             无订阅的主题.Click += notificationTopics_Click;
             无订阅的主题.SelectedIndexChanged += notificationTopics_SelectedIndexChanged;
+            无订阅的主题.ContextMenuStrip = topicsContextMenu;
+            无订阅的主题.MouseDown += notificationTopics_MouseDown;
             无订阅的主题.SelectedValueChanged += notificationTopics_SelectedValueChanged;
             // 
             // notifyIcon
@@ -99,6 +105,26 @@ namespace ntfysh_client
             resources.ApplyResources(exitToolStripMenuItem, "exitToolStripMenuItem");
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
+            // 
+            // topicsContextMenu
+            // 
+            resources.ApplyResources(topicsContextMenu, "topicsContextMenu");
+            topicsContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            topicsContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { copyTopicNameToolStripMenuItem, copyTopicFullAddressToolStripMenuItem });
+            topicsContextMenu.Name = "topicsContextMenu";
+            topicsContextMenu.Opening += topicsContextMenu_Opening;
+            // 
+            // copyTopicNameToolStripMenuItem
+            // 
+            resources.ApplyResources(copyTopicNameToolStripMenuItem, "copyTopicNameToolStripMenuItem");
+            copyTopicNameToolStripMenuItem.Name = "copyTopicNameToolStripMenuItem";
+            copyTopicNameToolStripMenuItem.Click += copyTopicNameToolStripMenuItem_Click;
+            // 
+            // copyTopicFullAddressToolStripMenuItem
+            // 
+            resources.ApplyResources(copyTopicFullAddressToolStripMenuItem, "copyTopicFullAddressToolStripMenuItem");
+            copyTopicFullAddressToolStripMenuItem.Name = "copyTopicFullAddressToolStripMenuItem";
+            copyTopicFullAddressToolStripMenuItem.Click += copyTopicFullAddressToolStripMenuItem_Click;
             // 
             // menuStrip1
             // 
@@ -176,6 +202,7 @@ namespace ntfysh_client
             FormClosed += MainForm_FormClosed;
             Load += MainForm_Load;
             trayContextMenu.ResumeLayout(false);
+            topicsContextMenu.ResumeLayout(false);
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -191,6 +218,9 @@ namespace ntfysh_client
         private System.Windows.Forms.ContextMenuStrip trayContextMenu;
         private System.Windows.Forms.ToolStripMenuItem showControlWindowToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip topicsContextMenu;
+        private System.Windows.Forms.ToolStripMenuItem copyTopicNameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyTopicFullAddressToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;

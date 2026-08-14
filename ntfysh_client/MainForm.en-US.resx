@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
     Microsoft ResX Schema
@@ -580,5 +580,11 @@
         wADgAAAAAAHAAOAAAAAAAcAA4AAAAAABwADwAAAAAAPAAP///////8AA////////wAD////////AAP//
         /////8AA////////wAD////////AAA==
 </value>
+  </data>
+  <data name="copyTopicNameToolStripMenuItem.Text" xml:space="preserve">
+    <value>Copy topic name</value>
+  </data>
+  <data name="copyTopicFullAddressToolStripMenuItem.Text" xml:space="preserve">
+    <value>Copy full address</value>
   </data>
 </root>

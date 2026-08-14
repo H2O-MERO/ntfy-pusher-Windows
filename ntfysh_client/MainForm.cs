@@ -3,6 +3,7 @@ using Microsoft.Win32;
 using Newtonsoft.Json;
 using ntfysh_client.Notifications;
 using System;
+using System.ComponentModel;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -331,6 +332,44 @@ namespace ntfysh_client
             int clickedItemIndex = 无订阅的主题.IndexFromPoint(new Point(ev.X, ev.Y));
 
             if (clickedItemIndex == -1) 无订阅的主题.ClearSelected();
+        }
+
+        private void notificationTopics_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Right) return;
+
+            int clickedItemIndex = 无订阅的主题.IndexFromPoint(e.Location);
+            if (clickedItemIndex == -1)
+            {
+                无订阅的主题.ClearSelected();
+                return;
+            }
+
+            // 右键时先选中被点击的行，便于复制该行内容
+            无订阅的主题.SelectedIndex = clickedItemIndex;
+        }
+
+        private void topicsContextMenu_Opening(object sender, CancelEventArgs e)
+        {
+            // 空白处右键时不显示菜单
+            e.Cancel = 无订阅的主题.SelectedIndex == -1;
+        }
+
+        private void copyTopicNameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (无订阅的主题.SelectedItem is not string topicText) return;
+
+            int atIndex = topicText.IndexOf('@');
+            string topicName = atIndex < 0 ? topicText : topicText.Substring(0, atIndex);
+            CopyToClipboard(topicName);
+        }
+
+        private void copyTopicFullAddressToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (无订阅的主题.SelectedItem is string topicText)
+            {
+                CopyToClipboard(topicText);
+            }
         }
 
         private void notifyIcon_Click(object sender, EventArgs e)
