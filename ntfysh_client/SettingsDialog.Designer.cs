@@ -1,4 +1,4 @@
-﻿
+
 using System;
 
 namespace ntfysh_client
@@ -52,6 +52,7 @@ namespace ntfysh_client
             groupNativeNotification = new System.Windows.Forms.GroupBox();
             nativeNotificationAutoCopy = new System.Windows.Forms.CheckBox();
             checkBoxAutoStart = new System.Windows.Forms.CheckBox();
+            checkBoxSilentStart = new System.Windows.Forms.CheckBox();
             comboBoxLanguage = new System.Windows.Forms.ComboBox();
             languageLabel = new System.Windows.Forms.Label();
             buttonPanel.SuspendLayout();
@@ -196,6 +197,12 @@ namespace ntfysh_client
             checkBoxAutoStart.UseVisualStyleBackColor = true;
             checkBoxAutoStart.CheckedChanged += checkBox1_CheckedChanged;
             // 
+            // checkBoxSilentStart
+            // 
+            resources.ApplyResources(checkBoxSilentStart, "checkBoxSilentStart");
+            checkBoxSilentStart.Name = "checkBoxSilentStart";
+            checkBoxSilentStart.UseVisualStyleBackColor = true;
+            // 
             // comboBoxLanguage
             // 
             resources.ApplyResources(comboBoxLanguage, "comboBoxLanguage");
@@ -216,6 +223,7 @@ namespace ntfysh_client
             Controls.Add(languageLabel);
             Controls.Add(comboBoxLanguage);
             Controls.Add(checkBoxAutoStart);
+            Controls.Add(checkBoxSilentStart);
             Controls.Add(groupNativeNotification);
             Controls.Add(label1);
             Controls.Add(groupCustomNotificationSettings);
@@ -273,6 +281,7 @@ namespace ntfysh_client
         private System.Windows.Forms.GroupBox groupNativeNotification;
         private System.Windows.Forms.CheckBox nativeNotificationAutoCopy;
         private System.Windows.Forms.CheckBox checkBoxAutoStart;
+        private System.Windows.Forms.CheckBox checkBoxSilentStart;
         private System.Windows.Forms.ComboBox comboBoxLanguage; 
         private System.Windows.Forms.Label languageLabel;
     }

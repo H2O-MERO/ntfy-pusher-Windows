@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using static ntfysh_client.SettingsModel;
@@ -59,6 +59,12 @@ namespace ntfysh_client
             get => checkBoxAutoStart.Checked;
             set => checkBoxAutoStart.Checked = value;
         }
+
+        public bool AutoStartSilent
+        {
+            get => checkBoxSilentStart.Checked;
+            set => checkBoxSilentStart.Checked = value;
+        }
         #endregion
 
         #region: Custom tray notification options
@@ -94,6 +100,7 @@ namespace ntfysh_client
             InitializeComponent();
             SetNotificationsUiElements();
             InitializeLanguageComboBox();
+            checkBoxSilentStart.Enabled = checkBoxAutoStart.Checked;
         }
         private void InitializeLanguageComboBox()
         {
@@ -158,7 +165,7 @@ namespace ntfysh_client
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            checkBoxSilentStart.Enabled = checkBoxAutoStart.Checked;
         }
 
         private void label3_Click(object sender, EventArgs e)

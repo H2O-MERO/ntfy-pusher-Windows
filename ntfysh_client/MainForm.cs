@@ -1,4 +1,4 @@
-﻿using Microsoft.Toolkit.Uwp.Notifications;
+using Microsoft.Toolkit.Uwp.Notifications;
 using Microsoft.Win32;
 using Newtonsoft.Json;
 using ntfysh_client.Notifications;
@@ -254,7 +254,12 @@ namespace ntfysh_client
 
             if (Program.Settings.AutoStartEnabled)
             {
-                rk.SetValue(appName, execPath);
+                string launchCommand = $"\"{execPath}\"";
+                if (Program.Settings.AutoStartSilent)
+                {
+                    launchCommand += " --start-in-tray";
+                }
+                rk.SetValue(appName, launchCommand);
             }
             else
             {
@@ -281,6 +286,7 @@ namespace ntfysh_client
             dialog.Timeout = Program.Settings.Timeout; // set timeout last so bounds are setup before setting value
             dialog.NativeNotificationsAutoCopyToClipboard = Program.Settings.NativeNotificationsAutoCopyToClipboard;
             dialog.AutoStartEnabled = Program.Settings.AutoStartEnabled;
+            dialog.AutoStartSilent = Program.Settings.AutoStartSilent;
             dialog.Language = Program.Settings.Language;
 
 
@@ -300,6 +306,7 @@ namespace ntfysh_client
             Program.Settings.CustomTrayNotificationsPlayDefaultWindowsSound = dialog.CustomTrayNotificationsPlayDefaultWindowsSound;
             Program.Settings.NativeNotificationsAutoCopyToClipboard = dialog.NativeNotificationsAutoCopyToClipboard;
             Program.Settings.AutoStartEnabled = dialog.AutoStartEnabled;
+            Program.Settings.AutoStartSilent = dialog.AutoStartSilent;
             Program.Settings.Language = dialog.Language;
 
             UpdateAutoStart();

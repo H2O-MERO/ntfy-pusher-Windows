@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Reflection;
 using Newtonsoft.Json;
@@ -16,7 +16,7 @@ namespace ntfysh_client
 
         private static SettingsModel GetDefaultSettings() => new()
         {
-            Revision = 3,
+            Revision = 4,
             Timeout = 5,
             ReconnectAttempts = 10,
             ReconnectAttemptDelay = 3,
@@ -26,6 +26,7 @@ namespace ntfysh_client
             CustomTrayNotificationsPlayDefaultWindowsSound = true,
             NativeNotificationsAutoCopyToClipboard = false,
             AutoStartEnabled = false,
+            AutoStartSilent = false,
             Language = "zh-CN"
         };
 
@@ -48,6 +49,10 @@ namespace ntfysh_client
                 older.NativeNotificationsAutoCopyToClipboard = newer.NativeNotificationsAutoCopyToClipboard;
                 older.AutoStartEnabled = newer.AutoStartEnabled;
                 older.Language = newer.Language;
+            }
+            if (older.Revision < 4)
+            {
+                older.AutoStartSilent = newer.AutoStartSilent;
             }
             older.Revision = newer.Revision;
         }
