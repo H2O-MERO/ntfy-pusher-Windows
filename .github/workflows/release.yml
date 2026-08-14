@@ -25,7 +25,7 @@ jobs:
         shell: pwsh
         run: |
           $version = "${{ github.ref_name }}".TrimStart('v')
-          dotnet publish ntfysh_client/ntfysh_client.csproj -c Release -r win-x64 --self-contained false -p:Version=$version -o publish/win-x64
+          dotnet publish ntfysh_client/ntfysh_client.csproj -c Release -r win-x64 --self-contained false -p:Version=$version -p:DebugType=none -p:DebugSymbols=false -o publish/win-x64
 
       - name: Create zip
         shell: pwsh
